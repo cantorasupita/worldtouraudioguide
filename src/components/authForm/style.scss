@@ -1,0 +1,38 @@
+.auth{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__formBox {
+        width: 600px;
+        padding: 20px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    input {
+        margin-bottom: 10px;
+    }
+    &__btnContainer {
+        display: flex;
+        justify-content: center;
+    }
+    &__down {
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        p {
+            margin-right: 10px;
+          
+        }
+    }
+   &__validMessage {
+        color: red;
+        text-align: center;
+        margin-top: 20px;
+   }
+}
+

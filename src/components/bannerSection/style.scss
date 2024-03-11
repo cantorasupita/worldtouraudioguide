@@ -1,0 +1,70 @@
+.subtitle-h1 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom:-10px;
+}
+
+.title-h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+
+.banner-section {
+    background-image: url('../../assets/img/lading-banner.png');
+    background-size: cover;
+    background-position: left bottom;
+    &__row {
+        padding-top: 170px;
+        padding-bottom: 170px;
+    }
+    &__col {
+       // outline: 1px solid red;
+        margin: auto;
+        width: 630px;
+    }
+    &__search-container {
+        //outline: 1px solid red;
+        width: 520px;
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 4px;
+        background-color: #fff;
+    }
+    &__search-inp {
+        width: 70%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 5px;
+        font-size: 16px;
+        &::placeholder {
+            color: #afafaf;
+            font-weight:300;
+        }
+        &:active {
+           outline:2px solid #29A9E1;
+        }
+    }
+    &__search-btn {
+        width: 30%;
+        padding: 10px;
+        border-radius: 0 5px 5px 0;
+        transition: all .3s;
+        background: #29A9E1;
+        color: #fff;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 16px;
+        &:hover {
+            background-color: #1896cc;
+        }
+        &:active {
+            background-color: #29A9E1;
+        }
+    }
+}

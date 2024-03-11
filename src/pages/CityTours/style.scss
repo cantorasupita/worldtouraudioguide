@@ -1,0 +1,61 @@
+.city-title__h2{
+    font-size: 28;
+    color:#000;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: 'Inter';
+}
+
+
+.citys-item {
+    font-family: 'Inter';
+    &__wrapper {
+        border: 1px solid rgb(229 231 235);
+        border-radius: 5px;
+        padding: 10px;
+        padding-bottom: 40px;
+        position: relative;
+        height: 100%;
+    }
+    &__imgWrapper {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        margin-bottom: 10px;  
+    }
+    &__bottomWrapper {
+        position: absolute;
+        bottom: 10px;
+    }
+    &__img {
+        border-radius: 5px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    &__adress {
+        display: flex;
+        img {
+            margin-right: 5px;
+            width: 15px;
+        }
+    }
+    &__stars {
+        display: flex;
+        margin-right: 10px;
+    }
+    &__icon {
+        width: 15px;
+    }
+    &__comments {
+        display: flex;
+    }
+    &__h4 {
+        margin-bottom: 25px;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+}
