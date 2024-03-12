@@ -1,17 +1,18 @@
 import axios from 'axios'
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
-import {loginAPI} from '../../api/userAPI';
+import {loginAPI, logoutAPI} from '../../api/userAPI';
 
 
 
 const initialState = {
     isAuth: localStorage.getItem('token') !== null && localStorage.getItem('token') !== '',//trun || false
     token:  localStorage.getItem('token') || '',
+    username: '',
     status: '',
     error: null,
-    message: ''
-
+    message: '',
+    
 }
 
 
@@ -44,7 +45,18 @@ export const loginThunk = createAsyncThunk(
 
 
  
-
+export const logOutThunk = createAsyncThunk(
+    'auth/logOut',
+    async (data, thunkAPI) => {
+        try {
+            let response = await logoutAPI();
+           // console.log(response, '-------OUT-----------------')
+        }catch(err){
+             console.log(err,'------------ERROR')
+            return thunkAPI.rejectWithValue(err.response.data);
+        }
+    }
+);
 
 
 
@@ -54,17 +66,21 @@ export const loginThunk = createAsyncThunk(
 const AuthSlice = createSlice({
     name: 'auth',
     initialState,
-    reducers: {},
+    reducers: {
+
+
+    },
     extraReducers: (builder) => {
         builder
             .addCase(loginThunk.pending, (state) => {
-                    state.status = 'loading'
-                    state.isAuth = false
+                state.status = 'loading'
+                state.isAuth = false
             })
-            .addCase(loginThunk .fulfilled, (state, action) =>{
+            .addCase(loginThunk.fulfilled, (state, action) =>{
                 //console.log(action, 'SUCCES')
                 state.status = 'succeeded';
                 state.isAuth = true
+                state.username = 'PUTSA'
                 localStorage.setItem('token', action.payload.data.data.user_token)
             })
             .addCase(loginThunk.rejected, (state, action) => {
@@ -72,9 +88,26 @@ const AuthSlice = createSlice({
                 state.status = 'failed';
                 state.error = action
                 state.isAuth = false
+                state.username = ''
                 localStorage.removeItem('token');
                 state.message = action.payload
  
+            })
+
+
+            .addCase(logOutThunk.pending, (state) => {
+                state.status = 'loading'
+            })
+            .addCase(logOutThunk.fulfilled, (state, action) =>{
+                //console.log(action, 'SUCCES')
+                state.status = 'succeeded';
+                localStorage.removeItem('token');
+                state.isAuth = false
+                state.username = ''
+            })
+            .addCase(logOutThunk.rejected, (state, action) => {
+                //console.log('REJECT')
+                state.status = 'failed';
             })
     }
 })

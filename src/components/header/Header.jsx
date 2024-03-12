@@ -8,7 +8,7 @@ import  logo from '../../assets/img/logo.png'
 
 import {useSelector, useDispatch} from 'react-redux';
 
-
+import { logOutThunk } from '../../redux/reducers/Auth';
 
 
 
@@ -31,13 +31,18 @@ const CustomInputGroupWidthButton = ({ placeholder, ...props }) => (
 );
 
 
+
+
 const Header = () => {
 
     const {authReducer} = useSelector(s=>s)
     const dispatch = useDispatch()
 
-
-    //console.log(authReducer, 'isAuth header')
+    const logoutHandler = ()=>{
+        dispatch(logOutThunk())
+    }
+    
+    console.log(authReducer, 'isAuth header')
 
     return(
         <div className="header">
@@ -74,7 +79,7 @@ const Header = () => {
                             <Link to={'/register'}><span  className='header__reg'>Sign up</span></Link>
                         </>) 
                         :
-                        ( <span  className='header__out'>Log Out</span>)
+                        ( <span  className='header__out' onClick={logoutHandler}>Log Out</span>)
                     }
                     </Col>
 

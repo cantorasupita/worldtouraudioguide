@@ -9,3 +9,7 @@ export const  loginAPI = async (data) => {
 }
 
 
+export const logoutAPI = async () => {
+    let result = await $host.post(`/signOut`)
+    return result
+}
