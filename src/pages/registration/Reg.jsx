@@ -28,7 +28,7 @@ const Reg = ()=>{
   const {
     handleSubmit,
     register,
-    watch,
+    //watch,
     formState: { errors, isSubmitting },
   } = useForm()
   
