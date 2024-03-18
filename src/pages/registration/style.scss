@@ -1,0 +1,40 @@
+.auth_reg {
+    width: 100%;
+    //height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(241, 241, 241);
+    &__formBox {
+        width: 700px;
+        padding: 20px;
+        margin-bottom: 50px;
+        background-color: #fff;
+        text-align: center;
+    }
+   &__form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100% ;
+    }
+    &__inputWrapper {
+        margin-bottom: 20px;
+        width: 49% !important;
+    }
+    &__inputWrapper-modify {
+        width: 100% !important;
+    }
+    &__btnContainer {
+        button {
+            margin-right: 20px;
+        }
+    }
+}
+
+.auth-reg__btnContainer {
+    button {
+        margin-right: 20px;
+    }
+}

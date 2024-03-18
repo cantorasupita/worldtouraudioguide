@@ -35,7 +35,7 @@ function App() {
     <ChakraProvider>
         <Header />
           <Routes>
-            {!authReducer.isAuth ? (
+            {authReducer.isAuth ? (
               <>
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Reg />} />
