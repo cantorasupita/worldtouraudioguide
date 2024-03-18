@@ -22,7 +22,7 @@ const CityTours = () => {
         try{
             let result = await axios.get(`https://18.198.94.122/api/getTourByCityId/${id}`)
             setTours(result.data.data)
-            //console.log(result.data.data)
+            console.log(result.data.data)
             setCity(result.data.data[0].place_location.name)
 
         }catch(e){
