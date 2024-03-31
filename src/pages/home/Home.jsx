@@ -5,7 +5,7 @@ import ItemCity from '../../components/ItemsCity';
 
 import axios from 'axios'
 
-
+import { useTranslation } from 'react-i18next';
 
 
 
@@ -14,7 +14,7 @@ import axios from 'axios'
 
 const Home = () => {
 
-
+    const {t} = useTranslation()
 
     const [citys, setCitys] = React.useState(null)
     

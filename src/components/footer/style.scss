@@ -1,0 +1,65 @@
+.footer {
+    padding: 30px 15px 50px 15px;
+    background-color: #192B48;
+    &__logo-Container {
+        display: flex;
+        padding-top: 5px;
+        //margin-right: 20px;
+    }
+    &__logo {
+        width: 60px; 
+        height: auto;
+        margin-right: 10px;
+    }
+    &__logo-text {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        p {
+            line-height: 1;
+        }
+    }
+    &__p {
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 10px;
+        transition: all .2s;
+        &:hover {
+            opacity: .5;
+        }
+    }
+    &__h4 {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    &__h4-mb {
+        margin-bottom: 10px;
+    }
+    &__icons-social {
+        display: flex;
+        align-items: center;
+        margin-left: -8px;
+        margin-bottom: 10px;
+        img {
+            width: 50px;
+            transition: all .2s;
+            &:hover {
+                opacity: .5;
+            }
+        }
+    }
+    &__icons-downalnd {
+        display: flex;
+        align-items: center;
+        img {
+            margin-top: 10px;
+            width: 120px;
+            margin-right: 10px;
+            transition: all .2s;
+            &:hover {
+                opacity: .5;
+            }
+        }
+    }
+}

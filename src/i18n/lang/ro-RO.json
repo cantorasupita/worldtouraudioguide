@@ -1,0 +1,51 @@
+{
+  "Home_page": {
+    "h1": "Turi în 13 limbi în jurul lumii",
+    "h1_subtitle": "Ascultă-ți universul",
+    "h2": "Destinații principale",
+    "search_input": "Unde mergi?",
+    "search_btn": "Caută"
+  },
+
+  "One_Tour": {
+      "comments": "comentarii",
+      "Download_app": "Descărcați aplicația noastră",
+      "Summary": "Rezumat",
+      "Audio_Producer": "Producător audio",
+      "Direction": "Direcție",
+      "Address": "Rotterdam Central, 3071 PB Rotterdam",
+      "Show_Directions": "Afișați direcțiile",
+      "Reviews": "Recenzii"
+  },
+
+  "Header": {
+    "Auth":{
+        "Login": "Autentificare",
+        "Sing_Up": "Înregistrare"
+    }
+  },
+
+  "Footer": {
+      "menu": {
+          "main": {
+              "title": "Publica",
+              "links": {
+                  "how_it_works": "Cum funcționează?",
+                  "countries": "Ţările"
+              }
+          },
+          "info": {
+              "title": "Informații",
+              "links": {
+                "about_us": "Despre noi",
+                "contact_us": "Contactaţi-ne",
+                "privacy_and_policy": "Confidențialitate și politică"
+              }
+          }
+      },
+      "Follow_us": "Urmează-ne",
+      "Download_our_app": "Descărcați aplicația noastră"
+  }
+
+
+} 

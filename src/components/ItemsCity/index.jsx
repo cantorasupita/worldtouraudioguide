@@ -6,7 +6,8 @@ import { SkeletonCircle, Skeleton } from '@chakra-ui/react'
 
 import { Link } from "react-router-dom";
 
-
+//i18next
+import { useTranslation } from 'react-i18next';
 
 
 
@@ -21,10 +22,10 @@ import { Link } from "react-router-dom";
 
 const ItemCity = ({citys}) => {
 
-
+    const {t} = useTranslation();
  
 
-   // console.log(citys)
+
 
     return (
         <section className="items-city">
@@ -32,7 +33,7 @@ const ItemCity = ({citys}) => {
             <Container>
                 <Row >
                     <Col >
-                        <h2 className="items-city__h2">Main destinations</h2>
+                        <h2 className="items-city__h2">{t("Home_page.h2")}</h2>
                     </Col> 
                 </Row>
                 

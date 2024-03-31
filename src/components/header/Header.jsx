@@ -1,8 +1,8 @@
 import './style.scss'
 import {Container, Row, Col} from 'react-bootstrap';
 import  {Link} from 'react-router-dom'
-import { InputPicker, InputGroup, Input  } from 'rsuite';
-import SearchIcon from '@rsuite/icons/Search';
+
+import { Select } from '@chakra-ui/react'
 
 import  logo from '../../assets/img/logo.png'
 
@@ -10,29 +10,21 @@ import {useSelector, useDispatch} from 'react-redux';
 
 import { logOutThunk } from '../../redux/reducers/Auth';
 
-
-
-
-const data = ['English', 'Deutsch', 'Francais',].map(
-    item => ({ label: item, value: item })
-  );
-
-
-
-
-
-const CustomInputGroupWidthButton = ({ placeholder, ...props }) => (
-  <InputGroup {...props} inside className="header__search">
-    <Input placeholder={placeholder} />
-    <InputGroup.Button>
-      <SearchIcon />
-    </InputGroup.Button>
-  </InputGroup>
-);
+//translation
+import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
+import { LOCALS } from '../../i18n/const.js'
 
 
 
 
+
+
+
+
+
+
+//Header ====================================================================
 const Header = () => {
 
     const {authReducer} = useSelector(s=>s)
@@ -42,46 +34,56 @@ const Header = () => {
         dispatch(logOutThunk())
     }
     
-    console.log(authReducer, 'isAuth header')
+    const {t} =  useTranslation();
+
+    const selectlanguege = (e) => {
+        i18next.changeLanguage(LOCALS[e.target.value])
+    }
+
 
     return(
         <div className="header">
             <Container>
                <Row className="header__pad">
 
-                    <Col md={4} >
+                    <Col md={4}>
                         <Link to={'/'}>
                             <img 
                                 className="header__logo"
                                 src={logo} 
                                 alt="logo"/>
                         </Link>
-                       
                     </Col>
 
-                   
-
-                    <Col md={8} className="header__containerLink">
-                        <CustomInputGroupWidthButton 
-                            className="header__search"
-                            size="md" 
-                            placeholder="Search" />
-
-                        <InputPicker 
-                            cleanable={false}
-                            defaultValue={'English'}
-                            className="header__langSelect" 
-                            data={data} block />
-
-                    {!authReducer.isAuth ? 
-                        (<>
-                            <Link to={'/login'}><span className='header__login'>Login</span></Link>            
-                            <Link to={'/register'}><span  className='header__reg'>Sign up</span></Link>
-                        </>) 
-                        :
-                        ( <span  className='header__out' onClick={logoutHandler}>Log Out</span>)
-                    }
+                    <Col md={8} className='header__right'>
+                        <div className='header__container'>
+                            <Select
+                                onChange={e=>selectlanguege(e)} 
+                                defaultValue={localStorage.getItem('i18nextLng').slice(-2)}
+                                bg='white'
+                                borderColor='white'
+                                color='black'
+                                size='sm' 
+                                className="header__select">
+                                    <option value='EN'>EN</option>
+                                    <option value='RO'>RO</option>
+                                    <option value='RS'>RS</option>
+                            </Select>
+                        </div>
+                        <div className='header__container  header__btns'>
+                            {!authReducer.isAuth ? 
+                                (<>
+                                    <Link to={'/login'}><span className='header__login header__button'>{t('Header.Auth.Login')}</span></Link>            
+                                    <Link to={'/register'}><span  className='header__reg'>{t('Header.Auth.Sing_Up')}</span></Link>
+                                </>) 
+                                :
+                                ( <span  className='header__out  header__button' onClick={logoutHandler}>Log Out</span>)
+                            }
+                        </div>
+                 
+                        
                     </Col>
+
 
                 </Row> 
             </Container>

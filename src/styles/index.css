@@ -46,7 +46,20 @@ code {
 }
 
 
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #f1f1f1;
+}
 
+.footer {
+  margin-top: auto;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
 
 .h2 {
     text-align: center;

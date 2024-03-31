@@ -1,0 +1,51 @@
+{
+    "Home_page": {
+        "h1": "Tours in 13 languages around the world",
+        "h1_subtitle": "Listen to your world",
+        "h2": "Main destinations",
+        "search_input": "Where are you going?",
+        "search_btn": "Search"
+    },
+
+    "One_Tour": {
+        "comments": "comments",
+        "Download_app": "Download our app",
+        "Summary": "Summary",
+        "Audio_Producer": "Audio Producer",
+        "Direction": "Direction",
+        "Address": "Rotterdam Central, 3071 PB Rotterdam",
+        "Show_Directions": "Show directions",
+        "Reviews": "Reviews"
+    },
+
+    "Header": {
+        "Auth":{
+            "Login": "Log In",
+            "Sing_Up": "Sing Up"
+        }
+    },
+
+    "Footer": {
+        "menu": {
+            "main": {
+                "title": "Publish",
+                "links": {
+                    "how_it_works": "How it works?",
+                    "countries": "Countries"
+                }
+            },
+            "info": {
+                "title": "Info",
+                "links": {
+                  "about_us": "About us",
+                  "contact_us": "Contact us",
+                  "privacy_and_policy": "Privacy and Policy"
+                }
+            }
+        },
+        "Follow_us": "Follow us",
+        "Download_our_app": "Download our app"
+    }
+
+   
+}
