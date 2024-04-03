@@ -3,8 +3,8 @@ import axios from 'axios';
 
 
 export const  loginAPI = async (data) => {
-    const {email, password} = data;
-    let result = await $host.post(`/login`, {input_email: email, input_password:password})
+    const {emailValid, passwordValid} = data;
+    let result = await $host.post(`/login`, {input_email: emailValid, input_password: passwordValid})
     return  result;
 }
 

@@ -1,5 +1,7 @@
 import './style.scss'
+
 import {Container, Row, Col} from 'react-bootstrap';
+
 import  {Link} from 'react-router-dom'
 
 import { Select } from '@chakra-ui/react'
@@ -7,10 +9,12 @@ import { Select } from '@chakra-ui/react'
 import  logo from '../../assets/img/logo.png'
 
 import {useSelector, useDispatch} from 'react-redux';
-
+//AC
 import { logOutThunk } from '../../redux/reducers/Auth';
 
-//translation
+import { useNavigate } from 'react-router-dom';
+
+//translation-------------------------------------------------
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import { LOCALS } from '../../i18n/const.js'
@@ -21,25 +25,27 @@ import { LOCALS } from '../../i18n/const.js'
 
 
 
-
-
-
 //Header ====================================================================
 const Header = () => {
+
+    const navigate = useNavigate();
 
     const {authReducer} = useSelector(s=>s)
     const dispatch = useDispatch()
 
+    //logOut=============================================================================
     const logoutHandler = ()=>{
+        navigate('/');
         dispatch(logOutThunk())
     }
     
+    //i18n==============================================================
     const {t} =  useTranslation();
-
     const selectlanguege = (e) => {
         i18next.changeLanguage(LOCALS[e.target.value])
     }
 
+    //console.log(i18next.language, '------------------------------------')
 
     return(
         <div className="header">
@@ -59,7 +65,7 @@ const Header = () => {
                         <div className='header__container'>
                             <Select
                                 onChange={e=>selectlanguege(e)} 
-                                defaultValue={localStorage.getItem('i18nextLng').slice(-2)}
+                                defaultValue={i18next.language.slice(-2)}
                                 bg='white'
                                 borderColor='white'
                                 color='black'
@@ -67,7 +73,7 @@ const Header = () => {
                                 className="header__select">
                                     <option value='EN'>EN</option>
                                     <option value='RO'>RO</option>
-                                    <option value='RS'>RS</option>
+                                    <option value='RS'>RU</option>
                             </Select>
                         </div>
                         <div className='header__container  header__btns'>
@@ -77,13 +83,10 @@ const Header = () => {
                                     <Link to={'/register'}><span  className='header__reg'>{t('Header.Auth.Sing_Up')}</span></Link>
                                 </>) 
                                 :
-                                ( <span  className='header__out  header__button' onClick={logoutHandler}>Log Out</span>)
+                                ( <span  className='header__out  header__button' onClick={logoutHandler}>{authReducer.username}</span>)
                             }
                         </div>
-                 
-                        
                     </Col>
-
 
                 </Row> 
             </Container>

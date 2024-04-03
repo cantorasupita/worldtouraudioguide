@@ -2,8 +2,6 @@ import React from 'react';
 import './style.scss';
 
 import logoWhite from '../../assets/img/icon/logoWhite.png';
-import googleIcon from '../../assets/img/icon/googlePlay.png';
-import apleIcon from '../../assets/img/icon/ApleStore.png';
 import facebook from '../../assets/img/icon/facebook.svg';
 import instaIcon from '../../assets/img/icon/insta_icon.svg';
 import googleIcon2 from '../../assets/img/icon/google-play.svg';
@@ -55,16 +53,31 @@ const Footer = () =>{
                         <div>
                             <h4 className='footer__h4 text-start'>{t("Footer.Follow_us")}</h4>
                             <div className='footer__icons-social'>
-                                <Link to={'/'}><img src={facebook} alt="google play icon"/></Link>
-                                <Link to={'/'}><img src={instaIcon} alt="google play icon"/></Link>
+                                <Link
+                                    target="blank" 
+                                    to={'https://www.facebook.com/worldtouraudioguide/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0'}>
+                                        <img src={facebook} alt="facebook icon"/>
+                                </Link>
+                                <Link 
+                                    to={'https://www.instagram.com/world_tour_audio_guide'} target="blank">
+                                        <img src={instaIcon} alt="instagram icon"/>
+                                </Link>
                             </div>   
                         </div>
                        
                         <div>
                             <h4 className='footer__h4 text-start'>{t("Footer.Download_our_app")}</h4>
                             <div  className='footer__icons-downalnd'>
-                                <Link to={'/'}><img src={googleIcon2} alt="google play icon"/></Link>
-                                <Link to={'/'}> <img src={apleIcon2} alt="aplee store icon"/></Link>
+                                <Link
+                                    target="blank" 
+                                    to={'https://play.google.com/store/apps/details?id=com.worldtour.audioguide.world_tour_audio_guide&pcampaignid=web_share'}>
+                                        <img src={googleIcon2} alt="google play icon"/>
+                                </Link>
+                                <Link 
+                                    target="blank"
+                                    to={'https://apps.apple.com/tt/app/world-tour-audio-guide/id1613490960'}> 
+                                        <img src={apleIcon2} alt="aplee store icon"/>
+                                </Link>
                             </div> 
                         </div>
                     </Col>

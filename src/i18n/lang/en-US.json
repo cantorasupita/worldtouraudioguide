@@ -6,7 +6,19 @@
         "search_input": "Where are you going?",
         "search_btn": "Search"
     },
-
+    "About": {
+        "h1": "Walk, listen and explore",
+        "h4_Changing the world": "Changing the world",
+        "p_1": "We want to make your life easier when traveling, we are the best personal audio guide. You can find different museums or tours that you can enjoy and learn in 13 different languages. World Tour Audio Guide offers you totally free audio guides, with an unbeatable quality, filtering and creating tours designed by our experts, so you can enjoy them to the fullest.",
+        "h4_Easy": "Easy",
+        "p_2": "We have made this application so easy and intuitive to use that you can enjoy the best way.",
+        "h4_The_Journey": "The Journey",
+        "p_3": "The main mission of World Tour Audio Guide is to make life easier for the traveller. I have been travelling all over the world all my life, but the idea and the aim of this company started in 2021, when I made a trip around Turkey, in this time I was visiting open museums and sometimes I was using a personal guide and sometimes an audio guide. When I was using the audio guides I had to pay to use them and also they were scarce in languages, the experience was not so good, as I had to pay for an audio guide and they didn't even have it in my language; this is something annoying, because one will always prefer to be told the story in one's mother tongue.",
+        "p_4": "That's where the idea came from, I asked myself: 'Why should it be expensive to soak up the culture and why should it be impossible for many people to use it, because it's not supported in their language?",
+        "p_5": "From that very moment I started working to create a platform that was totally free and had support in many languages, for me there should not be a barrier for one to be able to enjoy culture or learn about history, and that is why we have created this app, so that everyone can listen and enjoy the world around us.",
+        "h4_Sebastian_Weij": "Sebastian Weij",
+        "h6_Founder": "Founder/ CEO"
+    },
     "One_Tour": {
         "comments": "comments",
         "Download_app": "Download our app",

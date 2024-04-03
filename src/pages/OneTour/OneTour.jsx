@@ -5,31 +5,43 @@ import axios from 'axios';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Button, WrapItem,  SkeletonCircle, SkeletonText, Box } from '@chakra-ui/react'
 
+import {useSelector, useDispatch} from 'react-redux';
 
 import star from '../../assets/img/star.svg';
 import address from '../../assets/img/address.svg';
 import timeIcon from '../../assets/img/icon/time.svg';
 import coloncaIcon from '../../assets/img/icon/colonca.svg';
 import docIcon from '../../assets/img/icon/doc.svg';
-import googleIcon from '../../assets/img/icon/googlePlay.png';
-import apleIcon from '../../assets/img/icon/ApleStore.png';
 import logoIcon from '../../assets/img/icon/logo-icon.png';
+import apleIcon from '../../assets/img/icon/app-store.svg';   
+import googleIcon from '../../assets/img/icon/google-play.svg';   
 
+//AC
+import { logOutThunk } from '../../redux/reducers/Auth.js';
+import { useNavigate } from 'react-router-dom';
 //i18next
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
+import { LOCALS } from '../../i18n/const.js'
 
 
 
 
 //OneTour =============================================================================
 const OneTour = () =>{
-    console.log(i18next.language,'=====================')
+ 
     //Router-------------------------------------------------------------------------------
     let {id}  = useParams();
+    const navigate = useNavigate();
     const [searchParams] = useSearchParams();
     const city = searchParams.get('city');
     
+    //redux==============
+    const {authReducer} = useSelector(s=>s)
+    const dispatch = useDispatch()
+
+
+
     //otzivi
     let [reviewState, setReviewState] = React.useState({total: 0,  average:0})
     //ora
@@ -39,6 +51,12 @@ const OneTour = () =>{
 
     //i18n
     const {t} = useTranslation();
+
+
+
+
+
+
 
 
     //tour ----------------------------------------------------------------------------------
@@ -55,6 +73,8 @@ const OneTour = () =>{
             }
            
         }catch(err){
+            navigate('/login');
+            dispatch(logOutThunk())
             console.log(err)
         }
     }
@@ -116,7 +136,7 @@ const OneTour = () =>{
         setSizeFile(result)
     }
 
-    //console.log(cityTour, '-------------------------------------------')
+
 
 
     if(!tour){
@@ -168,8 +188,12 @@ const OneTour = () =>{
                         <div className='oneTour__downland'>
                             <h4 className="oneTour__h4">{t("One_Tour.Download_app")}</h4>
                             <div>
-                                <Link to={'/'}><img src={googleIcon} alt="google play icon"/></Link>
-                                <Link to={'/'}> <img src={apleIcon} alt="aplee store icon"/></Link>
+                                <Link to={'/'}>
+                                    <img  className='oneTour__downland-googleIcon' src={googleIcon} alt="google play icon"/>
+                                </Link>
+                                <Link to={'/'}> 
+                                    <img className='oneTour__downland-appleIcon' src={apleIcon} alt="aplee store icon"/>
+                                </Link>
                             </div> 
                         </div>
                     </Col>

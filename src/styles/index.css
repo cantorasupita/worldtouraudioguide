@@ -46,6 +46,13 @@ code {
 }
 
 
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 #root {
   display: flex;
   min-height: 100vh;

@@ -27,7 +27,7 @@ i18n
   .init({
     resources,
     fallbackLng: 'rs-RS', //defalt langue daca nui limba daales in OS
-    //lng: "uk", //defalt langue--------------------------------------------------------
+    //lng: "en-US", //defalt langue--------------------------------------------------------
 
     interpolation: {
       escapeValue: false // react already safes from xss

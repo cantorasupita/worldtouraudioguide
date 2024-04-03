@@ -67,7 +67,10 @@ const About = () =>{
             </Row>
 
             <Row className="contacts__container-item">
-                <Link to="https://wa.me/380961913399" className='d-flex contacts__link'>
+                <Link 
+                    target="blank"
+                    to="https://wa.me/31625568864"
+                    className='d-flex contacts__link'>
                     <div>
                         <img 
                             className="contacts__img"  

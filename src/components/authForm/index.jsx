@@ -2,7 +2,7 @@ import React from 'react';
 import { 
   Input, InputGroup, 
   InputRightElement, Button, 
-  Box,  Link, 
+  Box,   
   FormErrorMessage, FormControl, FormLabel   } from '@chakra-ui/react'
 import './style.scss';
 
@@ -11,7 +11,7 @@ import {loginThunk} from '../../redux/reducers/Auth';
 
 import { useForm } from "react-hook-form"
 
-
+import { Link } from "react-router-dom"
 
 
 //-----------------------------------------------------
@@ -22,7 +22,7 @@ function AuthDownComponent(){
       <Link 
         color='#29A9E1' 
         _hover={{ color: '#0070a0' }} 
-        href='#'>
+        to={'/register'}>
             Create an account
       </Link>
     </div>
@@ -54,12 +54,13 @@ const {
   const dispatch = useDispatch();
   const fetchLogin = () => {
       let {email, password} = valForm
-      dispatch(loginThunk({email, password }))
+      let emailValid = email.trim();
+      let passwordValid = password.trim();
+      dispatch(loginThunk({emailValid, passwordValid }))
       setFormVal({...valForm, password: '', email: ''})
   }
 
 
-  //console.log(valForm, 'sssssssssssssssssssssss')
 
   //password watch-----------------------------------------------
   const [show, setShow] = React.useState(false)
@@ -71,7 +72,7 @@ const {
     setFormVal({...valForm, password: e.target.value})
   }
   const handleMailChange = (e) => {
-    setFormVal({ ...valForm, email: e.target.value });
+    setFormVal({ ...valForm, email: e.target.value});
   };
 
 
@@ -84,10 +85,11 @@ const {
 
               <form className="auth__form" onSubmit={handleSubmit(fetchLogin)}>
                     <h2 className='h2'>Login</h2>
+
                     {/*Input Email------------------------------------------------ */}
                     <FormControl isInvalid={errors.email}>
                         <Input 
-                            {...register("email", { required: true, pattern: /^\S+@\S+$/i })} 
+                            {...register("email", { required: true, pattern: /^\s*\S+@\S+\s*$/i })} // /^\S+@\S+$/i
                             isInvalid={!!errors.email}
                             errorBorderColor='crimson'
                             placeholder='Email' 
@@ -109,7 +111,7 @@ const {
                               pr='4.5rem'
                               type={show ? 'text' : 'password'}
                               placeholder='Enter password'
-                              value={valForm.password}
+                              value={valForm.password.trim()}
                               onChange={handlePassword}
                               isInvalid={!!errors.password}
                               errorBorderColor='crimson'

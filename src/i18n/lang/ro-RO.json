@@ -6,7 +6,19 @@
     "search_input": "Unde mergi?",
     "search_btn": "Caută"
   },
-
+  "About": {
+      "h1": "Mergi, ascultă și explorează",
+      "h4_Changing the world": "Schimbând lumea",
+      "p_1": "Dorim să-ți facem viața mai ușoară în timp ce călătorești, suntem cei mai buni ghizi audio personali. Poți găsi diferite muzee sau excursii pe care le poți savura și învăța în 13 limbi diferite. World Tour Audio Guide îți oferă ghiduri audio complet gratuite, cu o calitate imbatabilă, filtrând și creând excursii proiectate de experții noștri, astfel încât să te poți bucura de ele la maxim.",
+      "h4_Easy": "Ușor",
+      "p_2": "Am făcut această aplicație atât de ușor și intuitiv de utilizat încât să te poți bucura de ea la maximum.",
+      "h4_The_Journey": "Călătoria",
+      "p_3": "Misiunea principală a World Tour Audio Guide este să-ți facă viața mai ușoară ca călător. Am călătorit în întreaga lume toată viața mea, dar ideea și scopul acestei companii au început în 2021, când am făcut o călătorie în Turcia. În această perioadă vizitam muzee în aer liber și uneori foloseam un ghid personal, iar alteori un ghid audio. Când foloseam ghizii audio, trebuia să plătesc pentru a-i folosi și, de asemenea, erau puțini în limbi, experiența nu a fost atât de bună, deoarece trebuia să plătesc pentru un ghid audio și nici măcar nu-l aveau în limba mea; acest lucru este enervant, pentru că întotdeauna preferi să-ți fie spusă povestea în limba maternă.",
+      "p_4": "De aici a venit ideea, m-am întrebat: 'De ce ar trebui să fie costisitor să absorbi cultura și de ce ar trebui să fie imposibil pentru multe persoane să o utilizeze, pentru că nu este suportată în limba lor?'",
+      "p_5": "De la acel moment am început să lucrez pentru a crea o platformă care să fie complet gratuită și să aibă suport în multe limbi, pentru mine nu ar trebui să existe o barieră pentru a te putea bucura de cultură sau pentru a învăța istoria, și de aceea am creat această aplicație, astfel încât toată lumea să poată asculta și să se bucure de lumea din jurul nostru.",
+      "h4_Sebastian_Weij": "Sebastian Weij",
+      "h6_Founder": "Fondator/ Director general"
+    },
   "One_Tour": {
       "comments": "comentarii",
       "Download_app": "Descărcați aplicația noastră",
