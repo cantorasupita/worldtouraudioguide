@@ -18,11 +18,10 @@ import Home from './pages/home/Home';
 import CityTours from './pages/CityTours/CityTours';
 import OneTour from './pages/OneTour/OneTour';
 import Comments from './pages/Comments/Comments';
-import Contacts from './pages/Contacts/Contacts.jsx';
-import How from './pages/How/How';
+import Contacts from './pages/Contacts/Contacts';
 import Login from './pages/login/Login';
 import Reg from './pages/registration/Reg';
-import Confi from './pages/Сonfi/Сonfi'
+
 
 import './i18n/index';
 //i18next
@@ -72,37 +71,27 @@ function App() {
   return (
     <ChakraProvider>
         <Header />
-        <Routes>
-          {!authReducer.isAuth ? 
-            ( <>
+         
+          <Routes>
+            {!authReducer.isAuth ? (
+              <>
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Reg />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/countries" element={<Countries />} />
-                <Route path="/contacts" element={<Contacts />} />
-                <Route path="/how" element={<How />} />
-                <Route path="/confi" element={<Confi />} />
                 <Route path="*" element={<Navigate to="/login" />} />
               </>
             ) : (
-            
               <>
-                <Route path="/" element={<Home />} />
-                <Route path="/how" element={<How />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/countries" element={<Countries />} />
-                <Route path="/contacts" element={<Contacts />} />
-                <Route path="/confi" element={<Confi />} />
                 <Route path="/city-tours/:id" element={<CityTours />} />
                 <Route path="/one-tour/:id" element={<OneTour />} />
                 <Route path="/comments/:id" element={<Comments />} />
-                
-                <Route path="*" element={<Navigate to="/" />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/countries" element={<Countries />} />
+                <Route path="/contacts" element={<Contacts />} />
+                <Route path="*" element={<Home />} />
               </>
             )}
-        </Routes>
-          
+          </Routes>
         <Footer />
     </ChakraProvider>
   );

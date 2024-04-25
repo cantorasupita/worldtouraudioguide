@@ -22,7 +22,7 @@ const Footer = () =>{
 
     return (
         <footer className='footer'>
-            <Container>
+            <Container style={{ maxWidth: '1000px' }}>
                 <Row>
 
                     <Col className="footer__logo-Container">
@@ -38,7 +38,7 @@ const Footer = () =>{
 
                     <Col>
                         <h4 className='footer__h4 footer__h4-mb text-start'>{t('Footer.menu.main.title')}</h4>
-                        <Link to={'/'}><p className="footer__p text-start">{t('Footer.menu.main.links.how_it_works')}</p></Link>
+                        <Link to={'/how'}><p className="footer__p text-start">{t('Footer.menu.main.links.how_it_works')}</p></Link>
                         <Link to={'/countries'}><p className="footer__p text-start">{t('Footer.menu.main.links.countries')}</p></Link>
                     </Col>
 
@@ -46,7 +46,7 @@ const Footer = () =>{
                         <h4 className='footer__h4 footer__h4-mb text-start'>{t('Footer.menu.info.title')}</h4>
                         <Link to={'/about'}><p className="footer__p text-start">{t('Footer.menu.info.links.about_us')}</p></Link>
                         <Link to={'/contacts'}><p className="footer__p text-start">{t('Footer.menu.info.links.contact_us')}</p></Link>
-                        <Link to={'/'}><p className="footer__p text-start">{t('Footer.menu.info.links.privacy_and_policy')}</p></Link>
+                        <Link to={'/confi'}><p className="footer__p text-start">{t('Footer.menu.info.links.privacy_and_policy')}</p></Link>
                     </Col>
 
                     <Col>

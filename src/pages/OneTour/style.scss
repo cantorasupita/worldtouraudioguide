@@ -130,9 +130,17 @@
         }
         &-googleIcon {
             width: 140px;
+            transition: all 0.3s;
+            &:hover {
+                opacity: .7;
+            }
         }
         &-appleIcon {
             width: 120px;
+            transition: all 0.3s;
+            &:hover {
+                opacity: .7;
+            }
         }
     }
 

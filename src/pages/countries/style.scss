@@ -1,0 +1,26 @@
+.countries {
+    &__statistic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        div {
+            font-size: 20px;
+            font-weight: 600;
+            margin-right: 50px;
+        }
+    }
+    &__ul {
+
+    }
+    &__li {
+        border: 1px solid rgb(187, 187, 187);
+        padding: 5px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        display: flex;
+        &-countries {
+            color: red;
+        }
+    }
+}

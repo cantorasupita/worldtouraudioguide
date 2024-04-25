@@ -1,8 +1,11 @@
 import React from 'react';
 import './style.scss';
 
+//UI
 import { Container, Row, Col } from 'react-bootstrap';
 import { SkeletonCircle, Skeleton } from '@chakra-ui/react'
+import H1 from '../../components/UI/H1/H1'
+import H2 from '../UI/H2/H2'
 
 import { Link } from "react-router-dom";
 
@@ -30,10 +33,14 @@ const ItemCity = ({citys}) => {
     return (
         <section className="items-city">
      
-            <Container>
+            <Container style={{ maxWidth: '1000px' }}>
                 <Row >
                     <Col >
-                        <h2 className="items-city__h2">{t("Home_page.h2")}</h2>
+                        <H2
+                            marginTop={'40px'} 
+                            fontSize={"36px"}>
+                                {t("Home_page.h2")}
+                        </H2>
                     </Col> 
                 </Row>
                 

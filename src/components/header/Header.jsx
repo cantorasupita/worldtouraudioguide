@@ -11,6 +11,7 @@ import  logo from '../../assets/img/logo.png'
 import {useSelector, useDispatch} from 'react-redux';
 //AC
 import { logOutThunk } from '../../redux/reducers/Auth';
+import {  getCitiesThunk } from '../../redux/reducers/Cities'
 
 import { useNavigate } from 'react-router-dom';
 
@@ -49,11 +50,11 @@ const Header = () => {
 
     return(
         <div className="header">
-            <Container>
+            <Container style={{ maxWidth: '1000px' }}>
                <Row className="header__pad">
 
                     <Col md={4}>
-                        <Link to={'/'}>
+                        <Link to={'/'} onClick={()=>dispatch(getCitiesThunk())}>
                             <img 
                                 className="header__logo"
                                 src={logo} 

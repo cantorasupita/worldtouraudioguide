@@ -153,7 +153,7 @@ const OneTour = () =>{
     }
     return (
         <div className='oneTour'>
-            <Container className='oneTour__container'>
+            <Container className='oneTour__container' style={{ maxWidth: '1000px' }}>
                
                 <Row className="oneTour__top">
 
@@ -188,10 +188,10 @@ const OneTour = () =>{
                         <div className='oneTour__downland'>
                             <h4 className="oneTour__h4">{t("One_Tour.Download_app")}</h4>
                             <div>
-                                <Link to={'/'}>
+                                <Link to={'https://play.google.com/store/apps/details?id=com.worldtour.audioguide.world_tour_audio_guide&pcampaignid=web_share'} target="blank">
                                     <img  className='oneTour__downland-googleIcon' src={googleIcon} alt="google play icon"/>
                                 </Link>
-                                <Link to={'/'}> 
+                                <Link to={'https://apps.apple.com/tt/app/world-tour-audio-guide/id1613490960'} target="blank"> 
                                     <img className='oneTour__downland-appleIcon' src={apleIcon} alt="aplee store icon"/>
                                 </Link>
                             </div> 

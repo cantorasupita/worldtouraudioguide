@@ -7,23 +7,25 @@ import axios from 'axios'
 
 import { useTranslation } from 'react-i18next';
 
-
-
+import { useSelector, useDispatch } from 'react-redux';
+import { getCitiesThunk } from '../../redux/reducers/Cities'
 
 
 
 const Home = () => {
 
     const {t} = useTranslation()
+    const citiesReducer = useSelector(s=>s.citiesReducer.cities)
+    const dispatch = useDispatch()
 
-    const [citys, setCitys] = React.useState(null)
+  
     
 
     const fetchData  = async ()=>{
         try {
             let result = await axios.get(`https://18.198.94.122/api/getCitiesWithTour`)
             if(result.data.status === 200){  
-                setCitys(result.data.data)
+                //setCitys(result.data.data)
             }else {
                 console.error("Ошибка при получении данных о городах:", result.data.message);
             }
@@ -36,7 +38,8 @@ const Home = () => {
 
 
     React.useEffect(()=>{
-        fetchData()
+        //fetchData()
+        dispatch(getCitiesThunk())
     },[])
 
 
@@ -45,7 +48,7 @@ const Home = () => {
         <div>
             <BannerSection />
             <ItemCity 
-                citys={citys} 
+                citys={citiesReducer} 
                 fetchData={fetchData}/>
         </div>
     )

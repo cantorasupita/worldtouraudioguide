@@ -1,39 +1,60 @@
 .subtitle-h1 {
+    position: relative;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     margin-bottom:-10px;
+    z-index: 10;
 }
 
 .title-h1 {
+    
+    position: relative;
     color: #fff;
     font-size: 30px;
     font-weight: 800;
     margin-bottom: 10px;
+    z-index: 10;
+}
+.banner-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: .5;
+    z-index: 1;
 }
 
-
 .banner-section {
-    background-image: url('../../assets/img/lading-banner.jpg');
+    position: relative;
+    background-image: url('../../assets/img/lading-banner-2.jpg');
     background-size: cover;
-    background-position: left bottom;
+    background-position: left center;
+
     &__row {
         padding-top: 170px;
         padding-bottom: 170px;
     }
     &__col {
-       // outline: 1px solid red;
         margin: auto;
         width: 630px;
     }
+    &__container {
+        position: relative;
+    }
     &__search-container {
-        //outline: 1px solid red;
+        
+        position: relative;
         width: 520px;
         display: flex;
         border-radius: 10px;
         overflow: hidden;
         padding: 4px;
         background-color: #fff;
+        z-index: 10;
     }
     &__search-inp {
         width: 70%;
@@ -67,4 +88,37 @@
             background-color: #29A9E1;
         }
     }
+    &__result-search {
+        position: absolute;
+        background-color: #fff;
+        top: 2px;
+        width: 520px;
+        border-radius: 10px;
+        z-index: 10;
+        overflow: hidden;
+    }
+    &__result-search-item {
+        display: block;
+        padding: 5px;
+        transition: all .3s;
+        &:hover {
+            cursor: pointer;
+            background-color: #dbdbdb;
+        }
+    }
+
+    &__x-icon {
+        width:  18px;
+        position: absolute;
+        top: -34px;
+        right: 252px;
+        z-index: 11;
+        opacity: .3;
+        transition: all 0.3s;
+        &:hover {
+            cursor: pointer;
+            opacity: .6;
+        }
+    }
+    
 }

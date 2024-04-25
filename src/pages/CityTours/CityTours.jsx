@@ -43,7 +43,7 @@ const CityTours = () => {
     
     return (
         <div className="cityTours">
-            <Container className="cityTours-container">
+            <Container className="cityTours-container" style={{ maxWidth: '1000px' }}>
                         <Row>
                             <Col>
                                 <h2 className={'city-title__h2'}>{city}</h2>

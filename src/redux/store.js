@@ -1,11 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import authReducer from './reducers/Auth'
-import toursReducer from './reducers/Tours'
+import citiesReducer from './reducers/Cities'
 
 
 export const store = configureStore({
     reducer: {
         authReducer,
-        toursReducer,
+        citiesReducer,
     }
 })

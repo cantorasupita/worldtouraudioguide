@@ -6,6 +6,10 @@ import {Container,Row, Col} from 'react-bootstrap';
 import aboutImage from '../../assets/img/about.jpg';
 import authorImg from '../../assets/img/Author.jpg'
 
+//UI
+import P from '../../components/UI/P/P';
+import H1 from '../../components/UI/H1/H1'
+
 //i18n
 import { useTranslation } from 'react-i18next';
 
@@ -19,7 +23,7 @@ const About = () =>{
 
     return (
         <div className='about'>
-            <Container className='about__container'>
+            <Container className='about__container' style={{ maxWidth: '1000px' }}>
                 <Row>
                     <Col className='about__img-bg'>
                         <img src={aboutImage} alt="about-image"/>
@@ -27,17 +31,17 @@ const About = () =>{
                 </Row>
                 <Row>
                     <Col className='about__img-bg'>
-                        <h1>{t("About.h1")}</h1>
+                        <H1>{t("About.h1")}</H1>
                         <h4>{t("About.h4_Changing the world")}</h4>
-                        <p>{t("About.p_1")}</p>
+                        <P>{t("About.p_1")}</P>
                         <h4>{t("About.h4_Easy")}</h4>
-                        <p>{t("About.p_2")}</p>
+                        <P>{t("About.p_2")}</P>
                         <h4>{t("About.h4_The_Journey")}</h4>
-                        <p>{t("About.p_3")}</p>
-                        <p>{t("About.p_4")}</p>
-                        <p>{t("About.p_5")}</p>
+                        <P>{t("About.p_3")}</P>
+                        <P>{t("About.p_4")}</P>
+                        <P>{t("About.p_5")}</P>
                         <h4>{t("About.h4_Sebastian_Weij")}</h4>
-                        <p>{t("About.h6_Founder")}</p>
+                        <P>{t("About.h6_Founder")}</P>
                         <img className='about__authorImg' src={authorImg} alt="author"/>
                       
                     </Col>
