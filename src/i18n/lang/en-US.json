@@ -27,7 +27,19 @@
         "Direction": "Direction",
         "Address": "Rotterdam Central, 3071 PB Rotterdam",
         "Show_Directions": "Show directions",
-        "Reviews": "Reviews"
+        "Reviews": "Reviews",
+        "btn_reviews": "Show all the reviews"
+    },
+    "How": {
+        "h1": "Create an audio guide and we give you support for 13 languages",
+        "h4_How_does_it_work?": "How does it work?",
+        "p_1": "We have the technology to make it easy for you to create an audio guide and we will support you within a week to make the audio guide available in 13 languages (English, Spanish, German, Dutch, Chinese, French, Japanese, Italian, Portuguese, Russian, Danish, Finnish, Romanian).",
+        "h4_In_3_steps": "In 3 steps",
+        "p_2": "Tour creator is only for museums that want to create and share their audioguides, thus creating a simple content to reach more of their customers and with only 3 simple steps it is possible to do it.",
+        "p_3": "Create an outdoor tour or indoors by adding and combining audio texts and images!",
+        "p_4": "When you create the tour, you can publish it and it will be instantly available on the mobile platform, if you think you have made a mistake, you can always go back to the platform and correct it.",
+        "p_5": "Your tour is already published, our team will work to make your tour available in 13 languages, so you can attract more people and promote it.",
+        "btn_login": "Let's Start"
     },
 
     "Header": {

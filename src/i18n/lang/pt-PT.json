@@ -1,0 +1,74 @@
+{
+    "Home_page": {
+        "h1": "Passeios em 13 idiomas ao redor do mundo",
+        "h1_subtitle": "Ouça o seu mundo",
+        "h2": "Principais destinos de viagem",
+        "search_input": "Onde você está indo?",
+        "search_btn": "Procurar"
+    },
+    "About": {
+        "h1": "Caminhe, ouça e explore",
+        "h4_Changing the world": "Mudando o mundo",
+        "p_1": "Queremos facilitar a sua vida durante a viagem, somos o melhor guia de áudio pessoal. Você pode encontrar vários museus ou excursões que poderá desfrutar e aprender em 13 idiomas diferentes. O World Tour Audio Guide oferece guias de áudio totalmente gratuitos com qualidade incomparável, filtragem e criação de tours projetados por nossos especialistas para que você possa aproveitá-los ao máximo.",
+        "h4_Easy": "Apenas",
+        "p_2": "Tornamos este aplicativo tão fácil e intuitivo de usar que você pode aproveitá-lo da melhor maneira possível.",
+        "h4_The_Journey": "Jornada",
+        "p_3": "A principal missão do World Tour Audio Guide é facilitar a vida do viajante. Viajei por todo o mundo durante toda a minha vida, mas a ideia e o propósito desta empresa começaram em 2021, quando fiz uma viagem à Turquia. Durante esse período visitei museus abertos e às vezes usei um guia pessoal e outras vezes um guia de áudio. Quando usei audioguias tive que pagar para usá-los e eles não eram multilíngues o suficiente, a experiência não foi tão boa pois tive que pagar por um audioguia e eles nem estavam no meu idioma; isso é chato porque é sempre melhor ouvir a história na sua língua nativa.",
+        "p_4": "Foi daí que surgiu a ideia, perguntei-me: 'Por que deveria ser caro desfrutar de uma cultura, e por que deveria ser impossível para muitas pessoas porque não é suportado na sua língua?",
+        "p_5": "A partir desse momento comecei a trabalhar na criação de uma plataforma que fosse totalmente gratuita e suportasse vários idiomas. Não deve haver barreiras para desfrutar da cultura ou aprender história e é por isso que criamos este aplicativo para que todos possam ouvir e desfrutar do mundo que nos rodeia.",
+        "h4_Sebastian_Weij": "Sebastião Wei",
+        "h6_Founder": "Fundador e responsável"
+    },
+    "One_Tour": {
+        "comments": "comentários",
+        "Download_app": "Baixe nosso aplicativo",
+        "Summary": "Resumo",
+        "Audio_Producer": "Produtor de áudio",
+        "Direction": "Endereço",
+        "Address": "Roterdão Central, 3071 PB Roterdão",
+        "Show_Directions": "Mostrar rota",
+        "Reviews": "Avaliações",
+        "btn_reviews": "Mostrar todos os comentários"
+    },
+    "How": {
+         "h1": "Crie um guia de áudio e oferecemos suporte para 13 idiomas",
+         "h4_How_does_it_work?": "Como funciona?",
+         "p_1": "Temos a tecnologia para facilitar a criação de um guia de áudio e iremos apoiá-lo dentro de uma semana para disponibilizar o guia de áudio em 13 idiomas (inglês, espanhol, alemão, holandês, chinês, francês, Japonês, Italiano, Português, Russo, Dinamarquês, Finlandês, Romeno).",
+         "h4_In_3_steps": "Em 3 etapas",
+         "p_2": "O criador de tours é apenas para museus que desejam criar e compartilhar seus audioguias, criando assim um conteúdo simples para alcançar mais clientes e com apenas 3 passos simples é possível fazê-lo.",
+         "p_3": "Crie um passeio ao ar livre ou em ambientes fechados adicionando e combinando textos de áudio e imagens!",
+         "p_4": "Ao criar o tour, você pode publicá-lo e ele ficará instantaneamente disponível na plataforma móvel, se você achar que cometeu um erro, você pode sempre voltar à plataforma e corrigi-lo.",
+         "p_5": "Seu tour já está publicado, nossa equipe trabalhará para disponibilizar seu tour em 13 idiomas, para que você possa atrair mais pessoas e promovê-lo.",
+         "btn_login": "Vamos começar"
+    },
+
+    "Header": {
+        "Auth":{
+            "Login": "Entrada",
+            "Sing_Up": "Cadastro"
+        }
+    },
+
+    "Footer": {
+        "menu": {
+            "main": {
+                "title": "Público",
+                "links": {
+                    "how_it_works": "Como funciona?",
+                    "countries": "Países"
+                }
+            },
+            "info": {
+                "title": "Informação",
+                "links": {
+                "about_us": "Sobre nós",
+                "contact_us": "Conecte-se conosco",
+                "privacy_and_policy": "Privacidade e Política"
+                }
+            }
+        },
+        "Follow_us": "Siga-nos",
+        "Download_our_app": "Baixe nosso aplicativo"
+    }
+ 
+}

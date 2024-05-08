@@ -138,7 +138,7 @@ const OneTour = () =>{
 
 
 
-
+    console.log(tour)
     if(!tour){
         return (
             <Container >
@@ -269,7 +269,7 @@ const OneTour = () =>{
                             <Link to={`/comments/${cityTour.id}?city=${cityTour.place_location.id}`}>
                                 <Button 
                                     className="oneTour__btn-comment"
-                                    width="200px"  >Show all the reviews</Button>
+                                    width="200px">{t("One_Tour.btn_reviews")}</Button>
                             </Link>
                         </WrapItem>
                     </Row>

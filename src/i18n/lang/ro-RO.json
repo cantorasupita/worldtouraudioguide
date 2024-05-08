@@ -27,7 +27,19 @@
       "Direction": "Direcție",
       "Address": "Rotterdam Central, 3071 PB Rotterdam",
       "Show_Directions": "Afișați direcțiile",
-      "Reviews": "Recenzii"
+      "Reviews": "Recenzii",
+      "btn_reviews": "Afișați toate recenziile"
+  },
+  "How": {
+    "h1": "Creați un ghid audio și vă oferim suport pentru 13 limbi",
+     "h4_How_does_it_work?": "Cum funcționează?",
+     "p_1": "Avem tehnologia care vă ajută să creați un ghid audio și vă vom ajuta în decurs de o săptămână să faceți acest ghid audio disponibil în 13 limbi (engleză, spaniolă, germană, olandeză, chineză, franceză, japoneză, italiană, portugheză, rusă, daneză, finlandeză, română).",
+     "h4_In_3_steps": "În 3 pași",
+     "p_2": "Creatorul de tur este doar pentru muzeele care doresc să creeze și să partajeze ghidurile audio, creând astfel un conținut simplu pentru a ajunge la mai mulți dintre clienții lor și cu doar 3 pași simpli este posibil să o facă.",
+     "p_3": "Creați un tur în aer liber sau în interior adăugând și combinând texte și imagini audio!",
+     "p_4": "Când creați turul, îl puteți publica și va fi disponibil instantaneu pe platforma mobilă, dacă credeți că ați făcut o greșeală, puteți oricând să vă întoarceți pe platformă și să o corectați.",
+     "p_5": "Turul dvs. este deja publicat, echipa noastră va lucra pentru a face turul dvs. disponibil în 13 limbi, astfel încât să puteți atrage mai mulți oameni și să-l promovați.",
+     "btn_login": "Să începem"
   },
 
   "Header": {

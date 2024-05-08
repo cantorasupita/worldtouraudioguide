@@ -94,7 +94,7 @@ const BannerSection = () => {
                                             filterDispatch()
                                         }}
                                         className="banner-section__search-btn"
-                                       >{t("Home_page.search_btn")} country
+                                       >{t("Home_page.search_btn")} 
                                     </button>
                                     :
                                     <button 
@@ -106,7 +106,7 @@ const BannerSection = () => {
                                             
                                          }}
                                         className="banner-section__search-btn"
-                                       >{t("Home_page.search_btn")} city
+                                       >{t("Home_page.search_btn")}
                                     </button>
                             } {/*###btn============================================================ */}
                         </div>

@@ -1,0 +1,74 @@
+{
+    "Home_page": {
+        "h1": "Visites en 13 langues à travers le monde",
+        "h1_subtitle": "Écoutez votre monde",
+        "h2": "Principales destinations de voyage",
+        "search_input": "Où vas-tu?",
+        "search_btn": "Recherche"
+    },
+    "About": {
+        "h1": "Marcher, écouter et explorer",
+        "h4_Changing the world": "Changer le monde",
+        "p_1": "Nous voulons vous faciliter la vie en voyage, nous sommes le meilleur audioguide personnel. Vous pouvez trouver différents musées ou excursions que vous pourrez apprécier et apprendre en 13 langues différentes. World Tour Audio Guide vous propose des audioguides entièrement gratuits avec une qualité inégalée, un filtrage et une création de visites conçus par nos experts pour que vous puissiez en profiter au maximum.",
+        "h4_Easy": "Juste",
+        "p_2": "Nous avons rendu cette application si simple et intuitive à utiliser que vous puissiez en profiter de la meilleure façon possible.",
+        "h4_The_Journey": "Voyage",
+        "p_3": "La mission principale de World Tour Audio Guide est de faciliter la vie du voyageur. J'ai voyagé partout dans le monde toute ma vie, mais l'idée et le but de cette entreprise ont commencé en 2021 lorsque j'ai fait un voyage en Turquie. Pendant cette période, j'ai visité des musées ouverts, utilisant parfois un guide personnel et parfois un audioguide. Lorsque j'utilisais des audioguides, je devais payer pour les utiliser et ils n'étaient pas assez multilingues, l'expérience n'était pas si bonne puisque je devais payer pour un audioguide et qu'ils n'étaient même pas dans ma langue ; c'est ennuyeux car il est toujours préférable d'écouter l'histoire dans sa langue maternelle.",
+        "p_4": "C'est de là qu'est venue l'idée, je me suis demandé : « Pourquoi cela devrait-il coûter cher de profiter d'une culture, et pourquoi cela devrait-il être impossible pour beaucoup de gens parce qu'elle n'est pas soutenue dans leur langue ?",
+        "p_5": "À partir de ce moment, j’ai commencé à travailler sur la création d’une plateforme totalement gratuite et prenant en charge de nombreuses langues. Il ne devrait y avoir aucun obstacle à la jouissance de la culture ou à l'apprentissage de l'histoire et c'est pourquoi nous avons créé cette application afin que tout le monde puisse écouter et profiter du monde qui nous entoure.",
+        "h4_Sebastian_Weij": "Sébastien Wei",
+        "h6_Founder": "Fondateur/PDG"
+    },
+    "One_Tour": {
+        "comments": "commentaires",
+        "Download_app": "Téléchargez notre application",
+        "Summary": "Résumé",
+        "Audio_Producer": "Producteur audio",
+        "Direction": "Adresse",
+        "Address": "Centre de Rotterdam, 3071 PB Rotterdam",
+        "Show_Directions": "fficher l'itinéraire",
+        "Reviews": "Commentaires",
+        "btn_reviews": "Afficher tous les avis"
+    },
+
+    "Header": {
+        "Auth":{
+            "Login": "Entrée",
+            "Sing_Up": "Inscription"
+        }
+    },
+    "How": {
+         "h1": "Créez un audioguide et nous vous proposons un support en 13 langues",
+         "h4_How_does_it_work ?": "Comment ça marche ?",
+         "p_1": "Nous disposons de la technologie pour vous permettre de créer facilement un audioguide et nous vous accompagnerons dans un délai d'une semaine pour rendre l'audioguide disponible en 13 langues (anglais, espagnol, allemand, néerlandais, chinois, français, japonais, italien, portugais, russe, danois, finnois, roumain).",
+         "h4_In_3_steps": "En 3 étapes",
+         "p_2": "Tour Creator est uniquement destiné aux musées qui souhaitent créer et partager leurs audioguides, créant ainsi un contenu simple pour toucher davantage de leurs clients et avec seulement 3 étapes simples, il est possible de le faire.",
+         "p_3": "Créez une visite en extérieur ou en intérieur en ajoutant et combinant des textes audio et des images !",
+         "p_4": "Lorsque vous créez la visite, vous pouvez la publier et elle sera instantanément disponible sur la plateforme mobile, si vous pensez avoir fait une erreur, vous pouvez toujours revenir sur la plateforme et la corriger.",
+         "p_5": "Votre visite est déjà publiée, notre équipe s'efforcera de rendre votre visite disponible en 13 langues, afin que vous puissiez attirer plus de personnes et la promouvoir.",
+         "btn_login": "Commençons"
+    },
+
+    "Footer": {
+        "menu": {
+            "main": {
+                "title": "Publique",
+                "links": {
+                    "how_it_works": "Comment ça fonctionne?",
+                    "countries": "Des pays"
+                }
+            },
+            "info": {
+                "title": "Information",
+                "links": {
+                "about_us": "À propos de nous",
+                "contact_us": "Connecte-toi avec nous",
+                "privacy_and_policy": "Confidentialité et politique"
+                }
+            }
+        },
+        "Follow_us": "Suivez-nous",
+        "Download_our_app": "Téléchargez notre application"
+    }
+ 
+}

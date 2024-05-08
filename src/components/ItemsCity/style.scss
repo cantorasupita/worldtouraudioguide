@@ -14,7 +14,7 @@
         background-color: #fff;
         border: 1px solid rgb(229 231 235);
         border-radius: 5px;
-        padding: 10px;
+        padding: 6px;
         position: relative;
         width: 100%;
         height: 100%;
@@ -35,12 +35,12 @@
         padding: 5px 0 5px 0;
         border-radius: 0 0 5px 5px;
         background-color: rgba(0, 0, 0, 0.459);
-        width: calc(100% - 20px);
+        width: calc(100% - 12px);
         text-align:center;
         color: #fff;
         font-size: 24px;
         position: absolute;
-        bottom: 10px;
+        bottom: 6px;
         left: 50%;
         transform: translateX(-50%);
         transition: all .2s;

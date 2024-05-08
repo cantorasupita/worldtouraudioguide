@@ -71,10 +71,20 @@ const Header = () => {
                                 borderColor='white'
                                 color='black'
                                 size='sm' 
-                                className="header__select">
+                                className="header__select"> 
                                     <option value='EN'>EN</option>
                                     <option value='RO'>RO</option>
                                     <option value='RS'>RU</option>
+                                    <option value='DE'>DE</option>
+                                    <option value='NL'>NL</option>
+                                    <option value='ES'>ES</option>
+                                    <option value='PT'>PT</option>
+                                    <option value='DK'>DK</option>
+                                    <option value='FI'>FI</option>
+                                    <option value='FR'>FR</option>
+                                    <option value='IT'>IT</option>
+                                    <option value='JP'>JP</option>
+                                    <option value='CN'>CN</option>
                             </Select>
                         </div>
                         <div className='header__container  header__btns'>

@@ -38,23 +38,19 @@ const How = () =>{
             <Container className='about__container' style={{ maxWidth: '1000px' }}>
                 <Row>
                     <Col md={{ span: 8, offset: 2 }}>
-                        <H1 >Create an audio guide and we give you support for 13 languages</H1> 
+                        <H1>{t("How.h1")}</H1> 
                     </Col>    
                 </Row>
                 <Row>
                     <Col md={12} lg={6} className='how__cont'>
-                        <h4>How does it work?</h4>
+                        <h4>{t("How.h4_How_does_it_work?")}</h4>
                         <P>
-                            We have the technology to make it easy for you to create an audio
-                            guide and we will support you within a week to make the audio
-                            guide available in 13 languages (English, Spanish, German, Dutch,
-                            Chinese, French, Japanese, Italian, Portuguese, Russian, Danish,
-                            Finnish, Romanian).
+                            {t("How.p_1")}
                         </P>
                         <Button
                             className="mb-3"
                             onClick={funcRedirect} 
-                            backgroundColor="#29A9E1">LETS START</Button>
+                            backgroundColor="#29A9E1"> {t("How.btn_login")}</Button>
                     </Col>
                     <Col md={12} lg={6}>
                         <img className='how__img' src={howImg1} alt="img how"/>  
@@ -62,32 +58,24 @@ const How = () =>{
                 </Row>
                 <Row>
                     <Col md={{ span: 8, offset: 2 }} className='how__container'>
-                        <h4>In 3 steps</h4>
+                        <h4>{t("How.h4_In_3_steps")}</h4>
                         <P className='how__p'>
-                            Tour creator is only for museums that want to create and share their audioguides,
-                            thus creating a simple content to reach more of their customers and with only
-                            3 simple steps it is possible to do it.
+                            {t("How.p_2")}
                         </P>
 
                         <div className="how__number">1</div>
                         <P className='how__img'>
-                            Create an outdoor tour or
-                            indoors by adding and combining audio texts and images!
+                            {t("How.p_3")}
                         </P>
                         <img className='how__img' src={howImg2} alt="img how"/>  
                         <div className="how__number">2</div>
                         <P className='how__p'>
-                            When you create the tour, you can publish it and it will be
-                            instantly available on the mobile platform,
-                            if you think you have made a mistake,
-                            you can always go back to the platform and correct it.
+                            {t("How.p_4")}
                         </P>
                         <img className='how__img' src={howImg3} alt="img how"/>  
                         <div className="how__number">3</div>
                         <P className='how__p'>
-                            Your tour is already published, our team will work to
-                            make your tour available in 13 languages,
-                            so you can attract more people and promote it.
+                            {t("How.p_5")}
                         </P>
                         <img className='how__img' src={howImg4} alt="img how"/>  
                     </Col>

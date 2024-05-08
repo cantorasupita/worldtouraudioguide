@@ -1,0 +1,74 @@
+{
+    "Home_page": {
+        "h1": "Touren in 13 Sprachen rund um die Welt",
+        "h1_subtitle": "Hören Sie auf Ihre Welt",
+        "h2": "Top-Reiseziele",
+        "search_input": "Wo gehst du hin?",
+        "search_btn": "Suchen"
+    },
+    "About": {
+        "h1": "Gehen, zuhören und erkunden",
+        "h4_Changing the world": "Die Welt verändern",
+        "p_1": "Wir möchten Ihnen das Reisen leichter machen, wir sind der beste persönliche Audioguide. Sie finden verschiedene Museen oder Ausflüge, die Sie in 13 verschiedenen Sprachen genießen und lernen können. World Tour Audio Guide bietet Ihnen völlig kostenlose Audioguides mit unübertroffener Qualität, Filterung und Tourerstellung, die von unseren Experten entwickelt wurden, damit Sie sie in vollen Zügen genießen können.",
+        "h4_Easy": "Nur",
+        "p_2": "Wir haben die Bedienung dieser App so einfach und intuitiv gestaltet, dass Sie sie optimal genießen können.",
+        "h4_The_Journey": "Reise",
+        "p_3": "Die Hauptaufgabe von World Tour Audio Guide besteht darin, das Leben des Reisenden einfacher zu machen. Ich bin mein ganzes Leben lang um die ganze Welt gereist, aber die Idee und der Zweck dieses Unternehmens begannen im Jahr 2021, als ich eine Reise in die Türkei unternahm. Während dieser Zeit besuchte ich offene Museen und nutzte manchmal einen persönlichen Führer und manchmal einen Audioführer. Wenn ich Audioguides nutzte, musste ich dafür bezahlen und sie waren nicht mehrsprachig genug. Das Erlebnis war nicht so gut, da ich für einen Audioguide bezahlen musste und sie nicht einmal in meiner Sprache waren; Das ist ärgerlich, denn es ist immer besser, sich die Geschichte in der eigenen Muttersprache anzuhören.",
+        "p_4": "Daraus entstand die Idee, ich fragte mich: „Warum sollte es teuer sein, eine Kultur zu genießen, und warum sollte es für viele Menschen unmöglich sein, weil sie in ihrer Sprache nicht unterstützt wird?",
+        "p_5": "Von diesem Moment an begann ich daran zu arbeiten, eine Plattform zu schaffen, die völlig kostenlos ist und viele Sprachen unterstützt. Es sollte für mich keine Hindernisse geben, Kultur zu genießen oder Geschichte zu lernen. Deshalb haben wir diese App entwickelt, damit jeder zuhören und die Welt um uns herum genießen kann.",
+        "h4_Sebastian_Weij": "Sebastian Wei",
+        "h6_Founder": "Gründer"
+    },
+    "One_Tour": {
+        "comments": "Kommentare",
+        "Download_app": "Laden Sie unsere App herunter",
+        "Summary": "Zusammenfassung",
+        "Audio_Producer": "Audioproduzent",
+        "Direction": "Adresse",
+        "Address": "Rotterdam Central, 3071 PB Rotterdam",
+        "Show_Directions": "Zeige Weg",
+        "Reviews": "Rezensionen",
+        "btn_reviews": "Alle Bewertungen anzeigen"
+    },
+    "How": {
+        "h1": "Erstellen Sie einen Audioguide und wir unterstützen Sie in 13 Sprachen",
+         "h4_How_does_it_work?": "Wie funktioniert es?",
+         "p_1": "Wir verfügen über die Technologie, die es Ihnen leicht macht, einen Audioguide zu erstellen, und wir unterstützen Sie innerhalb einer Woche dabei, den Audioguide in 13 Sprachen (Englisch, Spanisch, Deutsch, Niederländisch, Chinesisch, Französisch) verfügbar zu machen. Japanisch, Italienisch, Portugiesisch, Russisch, Dänisch, Finnisch, Rumänisch).",
+         "h4_In_3_steps": "In 3 Schritten",
+         "p_2": "Tour Creator ist nur für Museen gedacht, die ihre Audioguides erstellen und teilen möchten und so einen einfachen Inhalt erstellen möchten, um mehr ihrer Kunden zu erreichen, und das mit nur drei einfachen Schritten.",
+         "p_3": "Erstellen Sie eine Tour im Freien oder drinnen, indem Sie Audiotexte und Bilder hinzufügen und kombinieren!",
+         "p_4": "Wenn Sie die Tour erstellen, können Sie sie veröffentlichen und sie ist sofort auf der mobilen Plattform verfügbar. Wenn Sie glauben, dass Sie einen Fehler gemacht haben, können Sie jederzeit zur Plattform zurückkehren und ihn korrigieren.",
+         "p_5": "Ihre Tour ist bereits veröffentlicht. Unser Team wird daran arbeiten, Ihre Tour in 13 Sprachen verfügbar zu machen, damit Sie mehr Menschen anziehen und sie bewerben können.",
+         "btn_login": "Lass uns beginnen"
+    },
+
+    "Header": {
+        "Auth":{
+            "Login": "Eingang",
+            "Sing_Up": "Anmeldung"
+        }
+    },
+
+    "Footer": {
+        "menu": {
+            "main": {
+                "title": "Öffentlich",
+                "links": {
+                    "how_it_works": "Wie es funktioniert",
+                    "countries": "Länder"
+                }
+            },
+            "info": {
+                "title": "Information",
+                "links": {
+                "about_us": "Über uns",
+                "contact_us": "verbinde dich mit uns",
+                "privacy_and_policy": "Datenschutz und Richtlinien"
+                }
+            }
+        },
+        "Follow_us": "Folgen Sie uns",
+        "Download_our_app": "Laden Sie unsere Anwendung herunter"
+    }
+ 
+}

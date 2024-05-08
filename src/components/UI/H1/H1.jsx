@@ -21,6 +21,7 @@ const H1 = (props) => {
                 fontWeight: fontWeight || 700,
                 margin: margin || 'auto',
                 marginBottom: marginBottom || '40px',
+                lineHeight: '120%',
                 ...otherProps
             }}>
                 {children}

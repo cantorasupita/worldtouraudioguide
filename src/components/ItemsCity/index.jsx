@@ -49,7 +49,7 @@ const ItemCity = ({citys}) => {
                     {citys &&
                         citys.map((item)=>(
                         
-                            <Col key={item.id} lg={4} md={6} className="items-city__wrapper">
+                            <Col key={item.id} lg={4} md={6} className="custom-col items-city__wrapper">
                                 <div className="items-city__item">
                                     <Link to={`/city-tours/${item.id}`} >
                                         <img className='items-city__img' src={item.image}/>

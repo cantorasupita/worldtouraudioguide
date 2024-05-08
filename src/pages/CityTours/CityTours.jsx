@@ -27,7 +27,7 @@ const CityTours = () => {
         try{
             let result = await axios.get(`https://18.198.94.122/api/getTourByCityId/${id}`)
             setTours(result.data.data)
-            //console.log(result.data.data)
+            console.log(result.data.data)
             setCity(result.data.data[0].place_location.name)
 
         }catch(e){
@@ -55,7 +55,7 @@ const CityTours = () => {
                             {/*Sceleton----------------------------------------------------------------------------------- */}
                             {!tours  && 
                                 [1,2,3,4,5,6].map((item, _id)=>(
-                                <Col key={_id} lg={4} md={6} className="items-city__wrapper ">
+                                <Col key={_id} lg={4} md={6} className="items-city__wrapper custom-col">
                                     <div  className="items-city__item">
                                         <SkeletonCircle size='50' marginBottom="5" />
                                         <Skeleton height='5px' marginBottom="5"/>
@@ -70,7 +70,7 @@ const CityTours = () => {
                             {tours && tours.map((item, _id)=>{
                                 console.log(item)
                                 return (
-                                    <Col key={_id} md={4} className={"citys-item"}>
+                                    <Col key={_id} md={4} className={"citys-item custom-col"}>
                                         <div className="citys-item__wrapper">
                                             <div className="citys-item__imgWrapper">
                                                 <Link to={`/one-tour/${item.id}?city=${item.place_location.id}`} >

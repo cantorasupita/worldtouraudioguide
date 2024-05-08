@@ -1,0 +1,73 @@
+{
+    "Home_page": {
+        "h1": "Matkoja 13 kielellä ympäri maailmaa",
+        "h1_subtitle": "Kuuntele maailmaasi",
+        "h2": "Tärkeimmät matkakohteet",
+        "search_input": "Minne olet menossa?",
+        "search_btn": "Hae"
+    },
+    "About": {
+        "h1": "Kävele, kuuntele ja tutki",
+        "h4_Changing the world": "Maailman muuttaminen",
+        "p_1": "Haluamme helpottaa elämääsi matkoilla, olemme paras henkilökohtainen ääniopas. Löydät erilaisia ​​museoita tai retkiä, joista voit nauttia ja oppia 13 eri kielellä. World Tour Audio Guide tarjoaa sinulle täysin ilmaisia ​​äänioppaita vertaansa vailla olevalla laadulla, suodatuksella ja asiantuntijoidemme suunnittelemalla matkan luomalla, jotta voit nauttia niistä täysillä.",
+        "h4_Easy": "Vain",
+        "p_2": "Olemme tehneet tästä sovelluksesta niin helpon ja intuitiivisen käytettävän, että voit nauttia siitä parhaalla mahdollisella tavalla.",
+        "h4_The_Journey": "Matka",
+        "p_3": "World Tour Audio Guiden päätehtävä on helpottaa matkustajan elämää. Olen matkustanut ympäri maailmaa koko ikäni, mutta tämän yrityksen idea ja tarkoitus saivat alkunsa vuonna 2021, kun tein matkan Turkkiin. Tänä aikana vierailin avoimissa museoissa ja käytin joskus henkilökohtaista opasta ja joskus ääniopasta. Kun käytin äänioppaita, minun piti maksaa niiden käytöstä, eivätkä ne olleet tarpeeksi monikielisiä, kokemus ei ollut niin hyvä, koska minun piti maksaa äänioppaasta eivätkä ne olleet edes minun kielelläni; tämä on ärsyttävää, koska on aina parempi kuunnella tarina omalla äidinkielellään.",
+        "p_4": "Siitä idea syntyi, ja kysyin itseltäni: Miksi kulttuurin nauttimisen pitäisi olla kallista, ja miksi sen pitäisi olla mahdotonta monille ihmisille, koska sitä ei tueta heidän kielellään?",
+        "p_5": "Siitä hetkestä lähtien aloin luoda alustan, joka olisi täysin ilmainen ja tukee monia kieliä. Kulttuurista nauttimiseen tai historian oppimiseen ei pitäisi olla estettä, ja siksi loimme tämän sovelluksen, jotta kaikki voivat kuunnella ja nauttia ympärillämme olevasta maailmasta.",
+        "h4_Sebastian_Weij": "Sebastian Wei",
+        "h6_Founder": "Perustaja/toimitusjohtaja"
+    },
+    "One_Tour": {
+        "comments": "kommentteja",
+        "Download_app": "Lataa sovelluksemme",
+        "Summary": "Yhteenveto",
+        "Audio_Producer": "Äänen tuottaja",
+        "Direction": "Osoite",
+        "Address": "Rotterdam Central, 3071 PB Rotterdam",
+        "Show_Directions": "Näytä reitti",
+        "Reviews": "Arvostelut",
+        "btn_reviews": "Näytä kaikki arvostelut"
+    },
+    "How": {
+        "h1": "Luo ääniopas, niin tuemme sinua 13 kielellä",
+         "h4_How_does_it_work?": "Kuinka se toimii?",
+         "p_1": "Meillä on tekniikka, jonka avulla voit helposti luoda äänioppaan, ja autamme sinua viikon kuluessa saamaan äänioppaan saataville 13 kielellä (englanti, espanja, saksa, hollanti, kiina, ranska, japani, italia, portugali, venäjä, tanska, suomi, romania).",
+         "h4_In_3_steps": "3 vaiheessa",
+         "p_2": "Tour Creator on tarkoitettu vain museoille, jotka haluavat luoda ja jakaa äänioppaitaan ja luoda näin yksinkertaisen sisällön tavoittaakseen enemmän asiakkaitaan ja vain kolmella yksinkertaisella vaiheella se on mahdollista.",
+         "p_3": "Luo ulko- tai sisäkierros lisäämällä ja yhdistämällä äänitekstejä ja kuvia!",
+         "p_4": "Kun luot kiertueen, voit julkaista sen ja se on heti saatavilla mobiilialustalla, jos uskot tehneesi virheen, voit aina palata alustalle korjaamaan sen.",
+         "p_5": "Kiertomatkasi on jo julkaistu. Tiimimme pyrkii tuomaan kiertueesi saataville 13 kielellä, jotta voit houkutella lisää ihmisiä ja mainostaa sitä.",
+         "btn_login": "Aloitetaan"
+    },
+    "Header": {
+        "Auth":{
+            "Login": "Sisäänkäynti",
+            "Sing_Up": "Rekisteröinti"
+        }
+    },
+
+    "Footer": {
+        "menu": {
+            "main": {
+                "title": "Julkinen",
+                "links": {
+                    "how_it_works": "Kuinka se toimii?",
+                    "countries": "Maat"
+                }
+            },
+            "info": {
+                "title": "Tiedot",
+                "links": {
+                "about_us": "Meistä",
+                "contact_us": "Ota yhteyttä meihin",
+                "privacy_and_policy": "Yksityisyys ja käytäntö"
+                }
+            }
+        },
+        "Follow_us": "Seuraa meitä",
+        "Download_our_app": "Lataa sovelluksemme"
+    }
+ 
+}

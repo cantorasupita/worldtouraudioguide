@@ -1,0 +1,75 @@
+{
+    "Home_page": {
+        "h1": "Tour in 13 lingue in tutto il mondo",
+        "h1_subtitle": "Ascolta il tuo mondo",
+        "h2": "Principali destinazioni di viaggio",
+        "search_input": "Dove stai andando?",
+        "search_btn": "Ricerca"
+    },
+    "About": {
+        "h1": "Cammina, ascolta ed esplora",
+        "h4_Changing the world": "Cambiare il mondo",
+        "p_1": "Vogliamo semplificarti la vita durante il viaggio, siamo la migliore audioguida personale. Puoi trovare vari musei o escursioni con cui divertirti e imparare in 13 lingue diverse. World Tour Audio Guide ti offre audioguide completamente gratuite con qualità impareggiabile, filtri e creazione di tour progettati dai nostri esperti in modo che tu possa goderteli al meglio.",
+        "h4_Easy": "Appena",
+        "p_2": "Abbiamo reso questa app così facile e intuitiva da usare che potrai godertela nel miglior modo possibile.",
+        "h4_The_Journey": "Viaggio",
+        "p_3": "La missione principale di World Tour Audio Guide è rendere la vita più facile al viaggiatore. Ho viaggiato in tutto il mondo per tutta la vita, ma l'idea e lo scopo di questa azienda sono iniziati nel 2021 quando ho fatto un viaggio in Turchia. Durante questo periodo ho visitato musei aperti e talvolta ho utilizzato una guida personale e talvolta un'audioguida. Quando usavo le audioguide dovevo pagare per usarle e non erano abbastanza multilingue, l'esperienza non era così bella dato che dovevo pagare per un'audioguida e non erano nemmeno nella mia lingua; questo è fastidioso perché è sempre meglio ascoltare la storia nella tua lingua madre.",
+        "p_4": "Da lì è nata l'idea, mi sono chiesto: 'Perché dovrebbe essere costoso godersi una cultura, e perché dovrebbe essere impossibile per molte persone perché non è supportata nella loro lingua?",
+        "p_5": "Da quel momento in poi ho iniziato a lavorare per creare una piattaforma che fosse completamente gratuita e che supportasse molte lingue. Non dovrebbero esserci ostacoli al godimento della cultura o all'apprendimento della storia ed è per questo che abbiamo creato questa app in modo che tutti possano ascoltare e godersi il mondo che ci circonda.",
+        "h4_Sebastian_Weij": "Sebastiano Wei",
+        "h6_Founder": "Fondatore/amministratore delegato"
+    },
+    "One_Tour": {
+        "comments": "Commenti",
+        "Download_app": "Scarica la nostra app",
+        "Summary": "Riepilogo",
+        "Audio_Producer": "Produttore audio",
+        "Direction": "Indirizzo",
+        "Address": "Rotterdam Centrale, 3071 PB Rotterdam",
+        "Show_Directions": "Mostra percorso",
+        "Reviews": "Recensioni",
+        "btn_reviews": "Mostra tutte le recensioni"
+
+    },
+    "How": {
+         "h1": "Crea un'audioguida e ti diamo supporto per 13 lingue",
+         "h4_How_does_it_work?": "Come funziona?",
+         "p_1": "Abbiamo la tecnologia per semplificarti la creazione di un'audioguida e ti aiuteremo entro una settimana per rendere l'audioguida disponibile in 13 lingue (inglese, spagnolo, tedesco, olandese, cinese, francese, giapponese, italiano, portoghese, russo, danese, finlandese, rumeno).",
+         "h4_In_3_steps": "In 3 passaggi",
+         "p_2": "Tour Creator è riservato ai musei che vogliono creare e condividere le proprie audioguide, creando così un contenuto semplice per raggiungere un maggior numero di clienti e con soli 3 semplici passaggi è possibile farlo.",
+         "p_3": "Crea un tour all'aperto o al chiuso aggiungendo e combinando testi audio e immagini!",
+         "p_4": "Quando crei il tour, puoi pubblicarlo e sarà immediatamente disponibile sulla piattaforma mobile, se ritieni di aver commesso un errore, puoi sempre tornare sulla piattaforma e correggerlo.",
+         "p_5": "Il tuo tour è già pubblicato, il nostro team lavorerà per rendere il tuo tour disponibile in 13 lingue, così potrai attirare più persone e promuoverlo.",
+         "btn_login": "Iniziamo"
+    },
+
+    "Header": {
+        "Auth":{
+            "Login": "Entrata",
+            "Sing_Up": "Registrazione"
+        }
+    },
+
+    "Footer": {
+        "menu": {
+            "main": {
+                "title": "Pubblico",
+                "links": {
+                    "how_it_works": "Come funziona?",
+                    "countries": "Paesi"
+                }
+            },
+            "info": {
+                "title": "Informazione",
+                "links": {
+                "about_us": "Chi siamo",
+                "contact_us": "Connettiti con noi",
+                "privacy_and_policy": "Privacy e politica"
+                }
+            }
+        },
+        "Follow_us": "Seguici",
+        "Download_our_app": "Scarica la nostra applicazione"
+    }
+ 
+}

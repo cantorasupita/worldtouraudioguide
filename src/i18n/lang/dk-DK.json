@@ -1,0 +1,74 @@
+{
+    "Home_page": {
+        "h1": "Ture på 13 sprog rundt om i verden",
+        "h1_subtitle": "Lyt til din verden",
+        "h2": "Vigtigste rejsemål",
+        "search_input": "Hvor skal du hen?",
+        "search_btn": "Søg"
+    },
+    "About": {
+        "h1": "Gå, lyt og udforsk",
+        "h4_Changing the world": "At ændre verden",
+        "p_1": "Vi ønsker at gøre dit liv lettere, mens du rejser, vi er den bedste personlige lydguide. Du kan finde forskellige museer eller udflugter, som du kan nyde og lære på 13 forskellige sprog. World Tour Audio Guide tilbyder dig helt gratis lydguider med uovertruffen kvalitet, filtrering og turskabelse designet af vores eksperter, så du kan nyde dem fuldt ud.",
+        "h4_Easy": "Lige",
+        "p_2": "Vi har gjort denne app så nem og intuitiv at bruge, at du kan nyde den på den bedst mulige måde.",
+        "h4_The_Journey": "Rejse",
+        "p_3": "Hovedmissionen for World Tour Audio Guide er at gøre den rejsendes liv lettere. Jeg har rejst over hele verden hele mit liv, men ideen og formålet med dette firma startede i 2021, da jeg tog en tur til Tyrkiet. I løbet af denne tid besøgte jeg åbne museer og brugte nogle gange en personlig guide og nogle gange en lydguide. Da jeg brugte lydguider, skulle jeg betale for at bruge dem, og de var ikke flersprogede nok, oplevelsen var ikke så god, da jeg skulle betale for en lydguide, og de var ikke engang på mit sprog; dette er irriterende, fordi det altid er bedre at lytte til historien på dit modersmål.",
+        "p_4": "Det var der, ideen kom fra, spurgte jeg mig selv: 'Hvorfor skulle det være dyrt at nyde en kultur, og hvorfor skulle det være umuligt for mange mennesker, fordi det ikke er understøttet i deres sprog?",
+        "p_5": "Fra det øjeblik begyndte jeg at arbejde på at skabe en platform, der ville være helt gratis og understøtte mange sprog. Der bør ikke være nogen hindring for at nyde kultur eller lære historie, og det er derfor, vi har skabt denne app, så alle kan lytte og nyde verden omkring os.",
+        "h4_Sebastian_Weij": "Sebastian Wei",
+        "h6_Founder": "Stifter/CEO"
+    },
+    "One_Tour": {
+        "comments": "kommentarer",
+        "Download_app": "Download vores app",
+        "Summary": "Resumé",
+        "Audio_Producer": "Lyd producent",
+        "Direction": "Adresse",
+        "Address": "Rotterdam Central, 3071 PB Rotterdam",
+        "Show_Directions": "Vis rute",
+        "Reviews": "Anmeldelser",
+        "btn_reviews": "Vis alle anmeldelser"
+    },
+    "How": {
+        "h1": "Opret en lydguide og vi giver dig support til 13 sprog",
+         "h4_How_does_it_work?": "Hvordan virker det?",
+         "p_1": "Vi har teknologien til at gøre det nemt for dig at oprette en lydguide, og vi vil hjælpe dig inden for en uge med at gøre lydguiden tilgængelig på 13 sprog (engelsk, spansk, tysk, hollandsk, kinesisk, fransk, japansk, italiensk, portugisisk, russisk, dansk, finsk, rumænsk).",
+         "h4_In_3_steps": "I 3 trin",
+         "p_2": "Turskaber er kun for museer, der ønsker at skabe og dele deres audioguider, og dermed skabe et enkelt indhold for at nå ud til flere af deres kunder, og med kun 3 enkle trin er det muligt at gøre det.",
+         "p_3": "Opret en udendørs tur eller indendørs ved at tilføje og kombinere lydtekster og billeder!",
+         "p_4": "Når du opretter turen, kan du offentliggøre den, og den vil øjeblikkeligt være tilgængelig på mobilplatformen, hvis du tror, du har lavet en fejl, kan du altid gå tilbage til platformen og rette den.",
+         "p_5": "Din tur er allerede offentliggjort, vores team vil arbejde på at gøre din tur tilgængelig på 13 sprog, så du kan tiltrække flere mennesker og promovere den.",
+         "btn_login": "Lad os starte"
+    },
+
+    "Header": {
+        "Auth":{
+            "Login": "Indgang",
+            "Sing_Up": "Registrering"
+        }
+    },
+
+    "Footer": {
+        "menu": {
+            "main": {
+                "title": "Offentlig",
+                "links": {
+                    "how_it_works": "Hvordan det virker?",
+                    "countries": "Lande"
+                }
+            },
+            "info": {
+                "title": "Information",
+                "links": {
+                "about_us": "Om os",
+                "contact_us": "Forbind med os",
+                "privacy_and_policy": "Privatliv og politik"
+                }
+            }
+        },
+        "Follow_us": "Følg os",
+        "Download_our_app": "Download vores applikation"
+    }
+ 
+}

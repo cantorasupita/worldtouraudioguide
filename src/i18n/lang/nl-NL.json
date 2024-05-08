@@ -1,0 +1,74 @@
+{
+    "Home_page": {
+        "h1": "Tours in 13 talen over de hele wereld",
+        "h1_subtitle": "Luister naar jouw wereld",
+        "h2": "Belangrijkste reisbestemmingen",
+        "search_input": "Waar ga je heen?",
+        "search_btn": "Zoekopdracht"
+    },
+    "About": {
+        "h1": "Wandel, luister en ontdek",
+        "h4_Changing the world": "De wereld veranderen",
+        "p_1": "We willen uw leven gemakkelijker maken tijdens het reizen, wij zijn de beste persoonlijke audiogids. Je vindt er verschillende musea of ​​excursies waar je van kunt genieten en die je kunt leren in 13 verschillende talen. World Tour Audio Guide biedt u volledig gratis audiogidsen met ongeëvenaarde kwaliteit, filtering en tourcreatie ontworpen door onze experts, zodat u er ten volle van kunt genieten.",
+        "h4_Easy": "Zojuist",
+        "p_2": "We hebben deze app zo eenvoudig en intuïtief in gebruik gemaakt dat u er op de best mogelijke manier van kunt genieten.",
+        "h4_The_Journey": "Reis",
+        "p_3": "De belangrijkste missie van World Tour Audio Guide is om het leven van de reiziger gemakkelijker te maken. Ik heb mijn hele leven de hele wereld over gereisd, maar het idee en doel van dit bedrijf begon in 2021 toen ik een reis naar Turkije maakte. Gedurende deze tijd bezocht ik open musea en maakte soms gebruik van een persoonlijke gids en soms van een audiogids. Toen ik audiogidsen gebruikte, moest ik betalen om ze te gebruiken en ze waren niet meertalig genoeg. De ervaring was niet zo goed omdat ik moest betalen voor een audiogids en ze waren niet eens in mijn taal; dit is vervelend omdat het altijd beter is om naar het verhaal in je moedertaal te luisteren.",
+        "p_4": "Daar kwam het idee vandaan, ik vroeg mezelf af: 'Waarom zou het duur zijn om van een cultuur te genieten, en waarom zou het voor veel mensen onmogelijk zijn omdat het niet wordt ondersteund in hun taal?",
+        "p_5": "Vanaf dat moment begon ik te werken aan het creëren van een platform dat volledig gratis zou zijn en vele talen zou ondersteunen. Er mag geen belemmering zijn om van cultuur te genieten of geschiedenis te leren en daarom hebben we deze app gemaakt zodat iedereen kan luisteren en genieten van de wereld om ons heen.",
+        "h4_Sebastian_Weij": "Sebastiaan Wei",
+        "h6_Founder": "Oprichter en CEO"
+    },
+    "One_Tour": {
+        "comments": "opmerkingen",
+        "Download_app": "Download onze app",
+        "Summary": "Samenvatting",
+        "Audio_Producer": "Audioproducent",
+        "Direction": "Adres",
+        "Address": "Rotterdam Centraal, 3071 PB Rotterdam",
+        "Show_Directions": "Route weergeven",
+        "Reviews": "Recensies",
+        "btn_reviews": "Toon alle recensies"
+    },
+    "How": {
+         "h1": "Maak een audiogids en we bieden u ondersteuning voor 13 talen",
+         "h4_How_does_it_work?": "Hoe werkt het?",
+         "p_1": "We beschikken over de technologie om het u gemakkelijk te maken een audiogids te maken en we zullen u binnen een week ondersteunen om de audiogids beschikbaar te maken in 13 talen (Engels, Spaans, Duits, Nederlands, Chinees, Frans, Japans, Italiaans, Portugees, Russisch, Deens, Fins, Roemeens).",
+         "h4_In_3_steps": "In 3 stappen",
+         "p_2": "Tour Creator is alleen bedoeld voor musea die hun audiogidsen willen maken en delen, waardoor ze eenvoudige inhoud willen creëren om meer van hun klanten te bereiken en met slechts 3 eenvoudige stappen is het mogelijk om dit te doen.",
+         "p_3": "Maak een buitenrondleiding of binnen door audioteksten en afbeeldingen toe te voegen en te combineren!",
+         "p_4": "Wanneer u de tour maakt, kunt u deze publiceren en is deze direct beschikbaar op het mobiele platform. Als u denkt dat u een fout heeft gemaakt, kunt u altijd teruggaan naar het platform en deze corrigeren.",
+         "p_5": "Uw tour is al gepubliceerd. Ons team zal eraan werken om uw tour beschikbaar te maken in 13 talen, zodat u meer mensen kunt aantrekken en deze kunt promoten.",
+         "btn_login": "Laten we beginnen"
+    },
+
+    "Header": {
+        "Auth":{
+            "Login": "Ingang",
+            "Sing_Up": "Registratie"
+        }
+    },
+
+    "Footer": {
+        "menu": {
+            "main": {
+                "title": "Openbaar",
+                "links": {
+                    "how_it_works": "Hoe het werkt?",
+                    "countries": "Landen"
+                }
+            },
+            "info": {
+                "title": "Informatie",
+                "links": {
+                "about_us": "Over ons",
+                "contact_us": "Verbind je met ons",
+                "privacy_and_policy": "Privacy en beleid"
+                }
+            }
+        },
+        "Follow_us": "Volg ons",
+        "Download_our_app": "Download onze applicatie"
+    }
+ 
+}
