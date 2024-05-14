@@ -1,4 +1,6 @@
 import React from 'react';
+import './style.scss';
+
 
 
 
@@ -11,6 +13,7 @@ const H1 = (props) => {
         fontWeight, 
         margin, 
         marginBottom, 
+        marginTop,
         ...otherProps } = props;
 
     return (
@@ -21,9 +24,11 @@ const H1 = (props) => {
                 fontWeight: fontWeight || 700,
                 margin: margin || 'auto',
                 marginBottom: marginBottom || '40px',
+                marginTop: marginTop || '40px',
                 lineHeight: '120%',
                 ...otherProps
-            }}>
+            }}
+            className={'h1-media'}>
                 {children}
         </h1>
     )

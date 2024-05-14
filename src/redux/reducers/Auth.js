@@ -76,7 +76,7 @@ const AuthSlice = createSlice({
                 state.isAuth = false
             })
             .addCase(loginThunk.fulfilled, (state, action) =>{
-                console.log(action, 'SUCCES')
+                //console.log(action, 'SUCCES')
                 state.status = 'succeeded'
                 state.isAuth = true
                 state.username =  action.payload.data.data.user_info.user_name
@@ -84,7 +84,7 @@ const AuthSlice = createSlice({
                 localStorage.setItem('token', action.payload.data.data.user_token)
             })
             .addCase(loginThunk.rejected, (state, action) => {
-                console.log('REJECT')
+                //console.log('REJECT')
                 state.status = 'failed';
                 state.error = action
                 state.isAuth = false

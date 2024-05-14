@@ -35,7 +35,7 @@ const How = () =>{
 
     return (
         <div className='how'>
-            <Container className='about__container' style={{ maxWidth: '1000px' }}>
+            <Container className='about__container' style={{ maxWidth: '1100px' }}>
                 <Row>
                     <Col md={{ span: 8, offset: 2 }}>
                         <H1>{t("How.h1")}</H1> 

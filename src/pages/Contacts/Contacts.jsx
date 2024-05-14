@@ -16,7 +16,7 @@ import whatsapp_icon from '../../assets/img/icon/whatsapp_icon.png';
 //About--------------------------------------------------------
 const About = () =>{
     return (
-        <Container className='contacts' style={{ maxWidth: '1000px' }}>
+        <Container className='contacts' style={{ maxWidth: '1100px' }}>
 
             <Row className="contacts-container__item contacts__header">
                 <Col>

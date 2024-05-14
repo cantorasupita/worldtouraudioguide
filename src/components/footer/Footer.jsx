@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
 
-import logoWhite from '../../assets/img/icon/logoWhite.png';
+import logoWhite from '../../assets/img/icon/logoWhite.svg';
 import facebook from '../../assets/img/icon/facebook.svg';
 import instaIcon from '../../assets/img/icon/insta_icon.svg';
 import googleIcon2 from '../../assets/img/icon/google-play.svg';
@@ -22,34 +22,31 @@ const Footer = () =>{
 
     return (
         <footer className='footer'>
-            <Container style={{ maxWidth: '1000px' }}>
+            <Container style={{ maxWidth: '1100px' }}>
                 <Row>
 
-                    <Col className="footer__logo-Container">
+                    <Col sm={12} lg={3} className="footer__logo-Container mb-4">
                         <div>
-                            <img  className="footer__logo" src={logoWhite} alt='alt'/>
+                            <Link to={'/'}>
+                                <img  className="footer__logo" src={logoWhite} alt='logo'/>
+                            </Link> 
                         </div>
-                        <div className='footer__logo-text'>
-                            <p>WORLD TOUR</p>
-                            <p>AUDIO GUIDE</p>
-                        </div>
-                        
                     </Col>
 
-                    <Col>
+                    <Col sm={4}  lg={3} className='mb-4'>
                         <h4 className='footer__h4 footer__h4-mb text-start'>{t('Footer.menu.main.title')}</h4>
                         <Link to={'/how'}><p className="footer__p text-start">{t('Footer.menu.main.links.how_it_works')}</p></Link>
                         <Link to={'/countries'}><p className="footer__p text-start">{t('Footer.menu.main.links.countries')}</p></Link>
                     </Col>
 
-                    <Col>
+                    <Col sm={4} lg={3} className='mb-4'>
                         <h4 className='footer__h4 footer__h4-mb text-start'>{t('Footer.menu.info.title')}</h4>
                         <Link to={'/about'}><p className="footer__p text-start">{t('Footer.menu.info.links.about_us')}</p></Link>
                         <Link to={'/contacts'}><p className="footer__p text-start">{t('Footer.menu.info.links.contact_us')}</p></Link>
                         <Link to={'/confi'}><p className="footer__p text-start">{t('Footer.menu.info.links.privacy_and_policy')}</p></Link>
                     </Col>
 
-                    <Col>
+                    <Col sm={4} lg={3} className='mb-4'>
                         <div>
                             <h4 className='footer__h4 text-start'>{t("Footer.Follow_us")}</h4>
                             <div className='footer__icons-social'>

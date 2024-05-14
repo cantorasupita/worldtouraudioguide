@@ -59,12 +59,12 @@ const CitiesSlice = createSlice({
               state.status = 'loading'
           })
           .addCase(getCitiesThunk.fulfilled, (state, action) =>{
-              console.log(action, 'SUCCES')
+              //console.log(action, 'SUCCES')
               state.cities = action.payload
               state.searchCity = action.payload
           })
           .addCase(getCitiesThunk.rejected, (state, action) => {
-              console.log('REJECT')
+              //console.log('REJECT')
               state.status = 'failed';
 
 

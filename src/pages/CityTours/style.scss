@@ -24,6 +24,7 @@
 
 .citys-item {
     font-family: 'Inter';
+    margin-bottom: 10px;
     &__wrapper {
         border: 1px solid rgb(229 231 235);
         border-radius: 5px;
@@ -31,8 +32,10 @@
         padding-bottom: 40px;
         position: relative;
         height: 100%;
+        
     }
     &__imgWrapper {
+        border-radius: 5px;
         position: relative;
         width: 100%;
         height: 200px;
@@ -46,9 +49,14 @@
     &__img {
         border-radius: 5px;
         position: absolute;
-        width: 100%;
-        height: 100%;
+        max-width: 140%;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        //object-fit: contain;
     }
+
     &__adress {
         display: flex;
         img {

@@ -50,10 +50,10 @@ const Header = () => {
 
     return(
         <div className="header">
-            <Container style={{ maxWidth: '1000px' }}>
+            <Container style={{ maxWidth: '1100px' }}>
                <Row className="header__pad">
 
-                    <Col md={4}>
+                    <Col >
                         <Link to={'/'} onClick={()=>dispatch(getCitiesThunk())}>
                             <img 
                                 className="header__logo"
@@ -62,7 +62,7 @@ const Header = () => {
                         </Link>
                     </Col>
 
-                    <Col md={8} className='header__right'>
+                    <Col  className='header__right'>
                         <div className='header__container'>
                             <Select
                                 onChange={e=>selectlanguege(e)} 

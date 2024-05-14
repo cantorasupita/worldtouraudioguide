@@ -72,7 +72,7 @@ const Comments = () =>{
     }
     return (
         <div className='comentruri-page'>
-            <Container className='comentarii' style={{ maxWidth: '1000px' }}>
+            <Container className='comentarii' style={{ maxWidth: '1100px' }}>
                 {/*Nota ============================================================= */}
                 <Row>
                     <h2 className="comment__h2">{cityTour.name}</h2>

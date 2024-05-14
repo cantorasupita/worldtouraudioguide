@@ -23,7 +23,7 @@ const About = () =>{
 
     return (
         <div className='about'>
-            <Container className='about__container' style={{ maxWidth: '1000px' }}>
+            <Container className='about__container' style={{ maxWidth: '1100px' }}>
                 <Row>
                     <Col className='about__img-bg'>
                         <img src={aboutImage} alt="about-image"/>

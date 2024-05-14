@@ -78,7 +78,7 @@ const OneTour = () =>{
             console.log(err)
         }
     }
-
+   
     //cityTour------------------------------------------------------------------------------------------
     let [cityTour, setCityTour] = React.useState(null)
     let fetchCoutryTours = async ()=> {
@@ -92,7 +92,7 @@ const OneTour = () =>{
 
         }
     }
-
+    console.log(cityTour, '------------------')
     //otsenca------------------------------------------------------------------------
     const countReviews = ()=>{
         const total = cityTour.review_comments.reduce((accumulator, currentValue) => {
@@ -138,7 +138,6 @@ const OneTour = () =>{
 
 
 
-    console.log(tour)
     if(!tour){
         return (
             <Container >
@@ -153,49 +152,56 @@ const OneTour = () =>{
     }
     return (
         <div className='oneTour'>
-            <Container className='oneTour__container' style={{ maxWidth: '1000px' }}>
+            <Container className='oneTour__container' style={{ maxWidth: '1100px' }}>
                
                 <Row className="oneTour__top">
-
-                    <Col className="oneTour__left-Container">
-                        <img 
-                            src={tour.cover_image} 
-                            alt={tour.title['en-US']} 
-                            className={"oneTour__img"}/>
+                    <Col  md={6} className="oneTour__left-Container">
+                        <div >
+                            <img 
+                                src={tour.cover_image} 
+                                alt={tour.title['en-US']} 
+                                className={"oneTour__img"}/>
+                        </div>
                     </Col>
 
-                    <Col className="oneTour__right-Container">
-                        <h2 className="oneTour__h2">{tour.title[i18next.language]}</h2>
-                        <div className="oneTour__icons-container">
-                            <div><img src={timeIcon} alt="icon" className='oneTour__icon-time'/>{cityTour && cityTour.estimated_time} hr</div>
-                            <div><img src={coloncaIcon} alt="icon"  className='oneTour__icon-colonca'/> {oraState} min</div>
-                            <div><img src={docIcon} alt="icon"  className='oneTour__icon-doc'/> {sizeFileState} mb</div>
-                        </div>
-
-                        <div className="oneTour__comments">
-                            <div className="oneTour__adress">
-                                <img src={address} alt="adress icon"/><p>Rotterdam</p>
+                    <Col md={6} className="oneTour__right-Container">
+                        <div className="">
+                            <h2 className="oneTour__h2">{tour.title[i18next.language]}</h2>
+                            <div className="oneTour__icons-container">
+                                <div><img src={timeIcon} alt="icon" className='oneTour__icon-time'/>{cityTour && cityTour.estimated_time} hr</div>
+                                <div><img src={coloncaIcon} alt="icon"  className='oneTour__icon-colonca'/> {oraState} min</div>
+                                <div><img src={docIcon} alt="icon"  className='oneTour__icon-doc'/> {sizeFileState} mb</div>
                             </div>
-                            <div className='oneTour__stars'>
-                            {reviewState.total !== 0 &&
-                               Array.from({ length: reviewState.average }, (_, _id) => (
-                                <img key={_id} className="oneTour__icon-Star oneTour__icon-Star-modify" src={star} alt='icon star'/>
-                            ))}
-                            </div>
-                            <span>{cityTour && cityTour.review_comments.length} {t("One_Tour.comments")}</span>
-                        </div>
 
-                        <div className='oneTour__downland'>
-                            <h4 className="oneTour__h4">{t("One_Tour.Download_app")}</h4>
-                            <div>
-                                <Link to={'https://play.google.com/store/apps/details?id=com.worldtour.audioguide.world_tour_audio_guide&pcampaignid=web_share'} target="blank">
-                                    <img  className='oneTour__downland-googleIcon' src={googleIcon} alt="google play icon"/>
-                                </Link>
-                                <Link to={'https://apps.apple.com/tt/app/world-tour-audio-guide/id1613490960'} target="blank"> 
-                                    <img className='oneTour__downland-appleIcon' src={apleIcon} alt="aplee store icon"/>
-                                </Link>
-                            </div> 
+                            <div className="oneTour__comments">
+                                <div className="oneTour__adress">
+                                    <img src={address} alt="adress icon"/>
+                                        <p>
+                                            {(cityTour && cityTour.place_location && cityTour.place_location.name) && cityTour.place_location.name}
+                                        </p>
+                                </div>
+                                <div className='oneTour__stars'>
+                                {reviewState.total !== 0 &&
+                                Array.from({ length: reviewState.average }, (_, _id) => (
+                                    <img key={_id} className="oneTour__icon-Star oneTour__icon-Star-modify" src={star} alt='icon star'/>
+                                ))}
+                                </div>
+                                <span>{cityTour && cityTour.review_comments.length} {t("One_Tour.comments")}</span>
+                            </div>
+
+                            <div className='oneTour__downland'>
+                                <h4 className="oneTour__h4">{t("One_Tour.Download_app")}</h4>
+                                <div>
+                                    <Link to={'https://play.google.com/store/apps/details?id=com.worldtour.audioguide.world_tour_audio_guide&pcampaignid=web_share'} target="blank">
+                                        <img  className='oneTour__downland-googleIcon' src={googleIcon} alt="google play icon"/>
+                                    </Link>
+                                    <Link to={'https://apps.apple.com/tt/app/world-tour-audio-guide/id1613490960'} target="blank"> 
+                                        <img className='oneTour__downland-appleIcon' src={apleIcon} alt="aplee store icon"/>
+                                    </Link>
+                                </div> 
+                            </div>
                         </div>
+                 
                     </Col>
                 </Row>
 
@@ -211,14 +217,17 @@ const OneTour = () =>{
 
                 {/*Producer ============================================================= */} 
                 <Row className="oneTour__production">
-                    <Col>
+                    <Col md={4} className='mb-2'>
                         <h4 className="oneTour__h2">{t("One_Tour.Audio_Producer")}</h4>
-                       <img src={logoIcon} alt="logo"/>
+                       <img  className="oneTour__production-img"  src={tour.credit_images[0].image_url} alt="logo"/>
                     </Col>
-                    <Col>
-                        <h4 className="oneTour__h2">{t("One_Tour.Direction")}</h4>
-                        <h5 className="oneTour__h5">{t("One_Tour.Address")}</h5>
-                        <Link to={'/'}><span className='oneTour__link'>{t("One_Tour.Show_Directions")}</span></Link>
+                    <Col md={4} className='mb-2'>
+                        <h4 className="oneTour__h2">Links</h4>
+                        <Link to={`HUi`} ><span className='oneTour__link'>{cityTour?.links}</span></Link>
+                    </Col>
+                    <Col md={4}>
+                        <h4 className="oneTour__h2">{t("One_Tour.Address")}</h4>
+                        <Link to={`https://www.google.com/maps?q=${cityTour?.place_marker[0]?.lat},${cityTour?.place_marker[0]?.long}`} target="_blank"><span className='oneTour__link'>{t("One_Tour.Show_Directions")}</span></Link>
                     </Col>
                 </Row>
 

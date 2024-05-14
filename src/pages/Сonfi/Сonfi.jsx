@@ -30,7 +30,7 @@ const Confi = () =>{
 
     return (
         <div className='how'>
-            <Container className='about__container' style={{ maxWidth: '1000px' }}>
+            <Container className='about__container' style={{ maxWidth: '1100px' }}>
                 <H1>PRIVACY POLICY</H1>
                 <H2>Welcome to World Tour Audio Guide!</H2>
                 <P textAlign={"start"}>World Tour Audio Guide is owned and operated by World tour guide B.V.

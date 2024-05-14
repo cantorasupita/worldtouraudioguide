@@ -10,7 +10,7 @@ import star from '../../assets/img/star.svg';
 import address from '../../assets/img/address.svg';
 import {Link} from 'react-router-dom'
 
-
+import H1 from '../../components/UI/H1/H1';
 
 
 //-----------------------------------------------------------
@@ -43,10 +43,10 @@ const CityTours = () => {
     
     return (
         <div className="cityTours">
-            <Container className="cityTours-container" style={{ maxWidth: '1000px' }}>
+            <Container className="cityTours-container" style={{ maxWidth: '1100px' }}>
                         <Row>
                             <Col>
-                                <h2 className={'city-title__h2'}>{city}</h2>
+                                <H1>{city}</H1>
                             </Col>
                         </Row>
 
@@ -70,7 +70,7 @@ const CityTours = () => {
                             {tours && tours.map((item, _id)=>{
                                 console.log(item)
                                 return (
-                                    <Col key={_id} md={4} className={"citys-item custom-col"}>
+                                    <Col key={_id} lg={4} sm={6} className={"citys-item custom-col"}>
                                         <div className="citys-item__wrapper">
                                             <div className="citys-item__imgWrapper">
                                                 <Link to={`/one-tour/${item.id}?city=${item.place_location.id}`} >

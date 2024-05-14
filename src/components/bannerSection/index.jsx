@@ -70,7 +70,7 @@ const BannerSection = () => {
    },[0])
 
 
-    console.log(searchstate , 'IhUHUhUHU')
+
     return (
         <section className="banner-section">
             <Container>
@@ -86,7 +86,14 @@ const BannerSection = () => {
                                 className="banner-section__search-inp"
                                 type="text" 
                                 placeholder={t("Home_page.search_input")}/>
-                           
+                            <img
+                                onClick={()=>{
+                                    dispatch(getCitiesThunk())
+                                    setSearchstate([])
+                                    setInput('')
+                                }}  
+                                src={x} 
+                                className='banner-section__x-icon'/>
                            {/*btn============================================================ */}
                             {fetchCity ?
                                     <button
@@ -144,6 +151,8 @@ const BannerSection = () => {
                                 {/* ##Filtru POISK   =========================================================== */}
 
                             </div>
+
+                            {/* X btn============================================= 
                             <img
                                 onClick={()=>{
                                     dispatch(getCitiesThunk())
@@ -151,7 +160,7 @@ const BannerSection = () => {
                                     setInput('')
                                 }}  
                                 src={x} 
-                                className='banner-section__x-icon'/>
+                                className='banner-section__x-icon'/>*/}
                         </div>
                         
                     </div>

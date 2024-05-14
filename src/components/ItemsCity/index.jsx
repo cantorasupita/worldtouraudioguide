@@ -33,7 +33,7 @@ const ItemCity = ({citys}) => {
     return (
         <section className="items-city">
      
-            <Container style={{ maxWidth: '1000px' }}>
+            <Container style={{ maxWidth: '1100px' }}>
                 <Row >
                     <Col >
                         <H2

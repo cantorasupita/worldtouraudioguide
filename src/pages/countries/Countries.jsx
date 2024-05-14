@@ -3,7 +3,7 @@ import './style.scss';
 import axios from 'axios';
 import {Container,Row, Col} from 'react-bootstrap';
 import H2 from '../../components/UI/H2/H2'
-
+import { Button, WrapItem,  SkeletonCircle, SkeletonText, Box } from '@chakra-ui/react'
 //==========================================================
 import { useSelector, useDispatch } from 'react-redux';
 import { getCitiesThunk } from '../../redux/reducers/Cities'
@@ -109,100 +109,6 @@ function SimpleMap({citiesReducer}) {
 
 
 
-//Countries============================================================================================
-const Countries2 = () =>{
-
-
-    const citiesReducer = useSelector(s => s.citiesReducer.cities);
-    const dispatch = useDispatch();
-    useEffect(() => {
-        dispatch(getCitiesThunk());
-    }, []);
-
-    console.log(citiesReducer, 'qqqqqqqqqqqqqqqqq')
-
-
-
-
-    //==================================================
-    let [countries, setCountries] = React.useState(null)
-
-    const filterCountry = (data) => {
-        let res = data.filter((item=>{
-            return item.draft > 0 | item.actualization > 0 | item.new > 0 && item
-        }))
-        setCountries(res);
-    }
-
-
-    const fetchData = async ()=>{
-        try{
-            let res = await axios.get('https://18.198.94.122/api/get-all-countries')
-            //console.log(res, 'countries')
-            if(res.data.status === 200){
-                setCountries(res.data.data)
-                filterCountry(res.data.data)
-            }  
-        }catch(err){
-            console.log(err)
-        }
-       
-    }
-    
-
-
-    React.useEffect(()=>{
-        fetchData()
-    },[])
-
-
-
-    if(!countries){
-        return <h1>Loading...</h1>
-    }
-    return (
-        <div className='countries'>
-            <Container className='oneTour__container' style={{ maxWidth: '1000px' }}>
-                <Row>
-                    <div>{/*map======================================================= */}
-                            <SimpleMap citiesReducer={citiesReducer}/>
-                    </div>{/*map======================================================= */}
-                </Row>
-                <Row >
-                    <Col className='mt-4'>
-                        <H2 marginBottom={"10px"}>World tour audio guide countrie</H2>
-                        <div className='countries__statistic'>
-                            <div>57 countries</div>
-                            <div>350 tours</div>
-                        </div>
-                    </Col> 
-                </Row>
-                <Row>
-
-                    <Col className='countries__ul'>
-                        <div className='countries__li'>
-                                <Col className="fw-bold">Countries</Col>
-                                <Col className="fw-bold">Cities</Col>
-                                <Col className="fw-bold">Tours</Col>
-                        </div>
-                       {countries.map((item, _id)=>{
-                            return (
-                                <div className='countries__li' key={_id}>
-                                    <Col>{item.name}</Col>
-                                    <Col>{item.draft}</Col>
-                                    <Col>{item.actualization + item.new}</Col>
-                                </div>
-                            )})
-                        }
-                    </Col>
-                </Row>
-               
-            </Container>
-        </div>
-        
-       
-    )
-}
 
 
 const Countries = () =>{
@@ -213,7 +119,7 @@ const Countries = () =>{
         dispatch(getCitiesThunk());
     }, []);
 
-    console.log(citiesReducer, 'qqqqqqqqqqqqqqqqq')
+ 
 
 
 
@@ -244,7 +150,7 @@ const Countries = () =>{
     }
     
 
-    console.log(countries, 'countries')
+
     React.useEffect(()=>{
         fetchData()
     },[])
@@ -252,11 +158,20 @@ const Countries = () =>{
 
 
     if(!countries){
-        return <h1>Loading...</h1>
+        return (
+            <Container >
+                <Row >
+                <Box padding='6' boxShadow='lg' bg='white'>
+                    <SkeletonCircle size='300' />
+                    <SkeletonText mt='4' noOfLines={10} spacing='4' skeletonHeight='5' />
+                </Box>
+                </Row>
+            </Container>
+        )
     }
     return (
         <div className='countries'>
-            <Container className='oneTour__container' style={{ maxWidth: '1000px' }}>
+            <Container className='oneTour__container' style={{ maxWidth: '1100px' }}>
                 <Row>
                     <div>{/*map======================================================= */}
                             <SimpleMap citiesReducer={citiesReducer}/>
@@ -267,12 +182,11 @@ const Countries = () =>{
                         <H2 marginBottom={"10px"}>World tour audio guide countrie</H2>
                         <div className='countries__statistic'>
                             <div>1 countries</div>
-                            <div>7 tours</div>
+                            <div>{countries[0].actualization + countries[0].new}  tours</div>
                         </div>
                     </Col> 
                 </Row>
                 <Row>
-
                     <Col className='countries__ul'>
                         <div className='countries__li'>
                                 <Col className="fw-bold">Countries</Col>
@@ -283,7 +197,7 @@ const Countries = () =>{
                             return (
                                 <div className='countries__li' key={_id}>
                                     <Col>{item.name}</Col>
-                                    <Col>{item.draft + 1}</Col>
+                                    <Col>{item.draft}</Col>
                                     <Col>{item.actualization + item.new}</Col>
                                 </div>
                             )})
